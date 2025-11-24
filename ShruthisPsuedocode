@@ -1,0 +1,24 @@
+NAVIGATION NODE 
+//path planning creating routes and overall controls robot movement 
+//navigate to initial human positionings obtained from detection node 
+//navigate towards the footprints 
+
+
+
+DETECTION NODE 
+//orignal and new map are read and compared here. Inital human positions are stored here 
+//footprints are discovered here by comparing whats expected from /map and data we're collecting from /scan with respect to /amcl_pose
+//send this footprint data to navigation node to keep moving in that direction (record the direction where we see more footprints)
+//when we find new human pos through /scan we record these coordinates and send to nav 
+
+
+
+ALL TOPICS BEING USED
+-/map 
+    this is where the orignal map and new map are coming from 
+-/amcl_pose
+    this is where the x and y coordinates of the robot are obtained
+-/
+    this is where sensor readings will be availble 
+-/cmd_vel
+  this is where the robots movement is controlled
