@@ -1,0 +1,8 @@
+documentation and code walk through of writing a controller with nav2 
+https://docs.nav2.org/plugin_tutorials/docs/writing_new_nav2controller_plugin.html#writing-new-nav2controller-plugin
+
+the github for the code used in above link
+https://github.com/ros-navigation/navigation2_tutorials/blob/rolling/nav2_pure_pursuit_controller/src/pure_pursuit_controller.cpp 
+
+Relevance/usage of Nav2 within ROS2 video 
+https://www.youtube.com/watch?v=jkoGkAd0GYk 
