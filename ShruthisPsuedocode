@@ -3,6 +3,7 @@ NAVIGATION NODE
 //navigate to initial human positionings obtained from detection node 
 //navigate towards the footprints 
 
+subscribe to cmd_vel
 nav towards (x,y) in humanX=[] and humanY=[]
 
 
