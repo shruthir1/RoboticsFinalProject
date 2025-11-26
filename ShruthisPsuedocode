@@ -5,11 +5,23 @@ NAVIGATION NODE
 
 
 
+
 DETECTION NODE 
 //orignal and new map are read and compared here. Inital human positions are stored here 
 //footprints are discovered here by comparing whats expected from /map and data we're collecting from /scan with respect to /amcl_pose
 //send this footprint data to navigation node to keep moving in that direction (record the direction where we see more footprints)
 //when we find new human pos through /scan we record these coordinates and send to nav 
+
+load original map 
+initalHumansX = [] //or we can store it in variables too! 
+intialHumansY = []
+
+for i < humans:
+    send (x,y) to nav 
+
+
+
+
 
 
 
