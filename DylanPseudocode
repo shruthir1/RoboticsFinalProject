@@ -1,0 +1,55 @@
+I KNOW THIS IS REALLY BAD
+
+NAVIGATION NODE:
+    vars: searchMode, followMode, map, humanPoses, humanCount
+    subscriptions: map, amcl_pose
+
+    on spin:
+        LOAD map from /map.
+        LOAD position from amcl_pose
+
+        if(searchMode = true):
+
+            # <navigate through the map in a consistent, gridlike pattern>
+
+            footprintFlag = perceptionsub->footprintFlag
+
+            if(footprintFlag == true):
+                humanCount++
+                searchMode = false
+                followMode = true
+
+        if(followMode = true):
+            if(footprintFlag == true):
+                humanPoses[humanCount] = (position of humans)
+                searchMode = true
+                followmode = false
+
+            if(human counter == 2):
+                print("Location of human 1" + humanPoses[0])
+                print("Location of human 2:" + humanPoses[1])
+                END PROGRAM
+
+#given directions by NAVIGATION (downstream)
+LOCOMOTION NODE:
+    subscriptions: ???
+
+    # Use NAV2 to execute navigation commands from NAVIGATION. 
+    # locomotes using these values. 
+
+#given directions by NAVIGATION (downstream)
+PERCEPTION NODE:
+    subscriptions: amcl_pose, map, sensor input
+    vars: sensorFlag
+
+    on spin:
+        LOAD map from /map
+        LOAD position on map from /amcl_pose
+        # pull ranges of various objects from the rangefinder. (Pointcloud?)
+
+        if(current ranges != ranges on map in reference to our location):
+            sensorFlag = true
+
+        publish sensorFlag
+
+    
