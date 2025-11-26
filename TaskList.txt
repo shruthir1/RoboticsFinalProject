@@ -15,3 +15,14 @@
     [] Checking for map anomalies 
     [] Marking human locations, extracting coordinates
 
+
+
+Navigation: obtain coordinates of discrepnecies, obtain original human cooridinates, 
+
+Locomotion: responsible for getting coordinates from nav and moving the robot 
+
+Shruthi: 
+
+Anusha: 
+
+Dylan:
