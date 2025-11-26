@@ -3,7 +3,7 @@ NAVIGATION NODE
 //navigate to initial human positionings obtained from detection node 
 //navigate towards the footprints 
 
-
+nav towards (x,y) in humanX=[] and humanY=[]
 
 
 DETECTION NODE 
@@ -12,13 +12,28 @@ DETECTION NODE
 //send this footprint data to navigation node to keep moving in that direction (record the direction where we see more footprints)
 //when we find new human pos through /scan we record these coordinates and send to nav 
 
+subscribe to amcl
+subscribe to map 
+subscribe to (topic where the sensor readings are taken from)
+rclcpp::Node::make_shared("detection_node") //need to make node shared
+pub_ = node->create_publisher<MessageType> //need to do if both nodes are gonna share info 
+
 load original map 
 initalHumansX = [] //or we can store it in variables too! 
 intialHumansY = []
 
-for i < humans:
-    send (x,y) to nav 
+CurrPosX = pose.x
+CurrPosY = pose.y
 
+for i < humans:
+    send (x,y) to navNode 
+
+if(currPos = human.x and human.y):
+    if(footprints):
+        navX[i] = footprint.x
+        navY[i] = footprint.y
+    for j in nav 
+        send (x,y) to navNode 
 
 
 
