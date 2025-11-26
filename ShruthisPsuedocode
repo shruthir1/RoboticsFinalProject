@@ -30,7 +30,7 @@ for i < humans:
     send (x,y) to navNode 
 
 if(currPos = human.x and human.y):
-    if(footprints):
+    if(footprints): //this can be redone also if not literal footprints to say at every location if curr evn doesnt match inital map then document the coordinates
         navX[i] = footprint.x
         navY[i] = footprint.y
     for j in nav 
