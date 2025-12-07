@@ -1,20 +1,27 @@
 ---===(Tasks)===---
 
-[] Locomotion (moving)
+ Locomotion (moving)
     [] Nav2 integration
     [] Based on navigation
+    -MOVES BASED ON "WHERE TO GO"
+subscribes to navigation node
 
-[] Navigation (knowing where you are)
+
+ Navigation (knowing where you are)
     [] Nav2 integration
-    [] Reference map creation
-    [] Obstacle avoidance
-    [] Checking human initial positions & transition into a searching mode
+    [] Reference map utilized here 
+    [] Obstacle avoidance -> already part of nav2
     [] Following footprints extracted from /map topic 
+    - DECIDES WHERE TO GO
+subscribes to perception node 
+publishes to locomotion node 
 
-[] Perception (knowing where the humans are)
+Perception (knowing where the humans are)
     [] Checking for map anomalies 
     [] Marking human locations, extracting coordinates
+    -estimates next human pose and feeds into nav node 
 
+publishes human pose to Navigation node 
 
 
 Navigation: obtain coordinates of discrepnecies, obtain original human cooridinates, 
@@ -26,3 +33,4 @@ Shruthi:
 Anusha: 
 
 Dylan:
+
