@@ -1,0 +1,9 @@
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/uninstall.dir
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/finder_program_uninstall.dir
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/test.dir
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/edit_cache.dir
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/rebuild_cache.dir
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/list_install_components.dir
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/install.dir
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/install/local.dir
+/home/shruthir/CSE180FinalProject/build/finder_program/CMakeFiles/install/strip.dir

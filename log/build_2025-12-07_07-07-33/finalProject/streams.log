@@ -1,0 +1,33 @@
+[0.030s] Invoking command in '/home/shruthir/CSE180FinalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
+[0.060s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.441s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.835s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.850s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.863s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.879s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.988s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.991s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.596s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.176s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.297s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[2.357s] -- Found rclcpp_action: 28.1.11 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[5.491s] [31mCMake Error at CMakeLists.txt:45 (find_package):
+[5.492s]   By not providing "Findnav2_msgs.cmake" in CMAKE_MODULE_PATH this project
+[5.492s]   has asked CMake to find a package configuration file provided by
+[5.492s]   "nav2_msgs", but CMake did not find one.
+[5.493s] 
+[5.493s]   Could not find a package configuration file provided by "nav2_msgs" with
+[5.494s]   any of the following names:
+[5.495s] 
+[5.496s]     nav2_msgsConfig.cmake
+[5.496s]     nav2_msgs-config.cmake
+[5.496s] 
+[5.496s]   Add the installation prefix of "nav2_msgs" to CMAKE_PREFIX_PATH or set
+[5.497s]   "nav2_msgs_DIR" to a directory containing one of the above files.  If
+[5.497s]   "nav2_msgs" provides a separate development package or SDK, be sure it has
+[5.497s]   been installed.
+[5.497s] 
+[5.497s] [0m
+[5.497s] -- Configuring incomplete, errors occurred!
+[5.516s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[5.522s] Invoked command in '/home/shruthir/CSE180FinalProject/build/finalProject' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12

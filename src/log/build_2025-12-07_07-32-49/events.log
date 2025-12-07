@@ -1,0 +1,351 @@
+[0.000000] (-) TimerEvent: {}
+[0.000930] (finalProject) JobQueued: {'identifier': 'finalProject', 'dependencies': OrderedDict()}
+[0.002066] (finalProject) JobStarted: {'identifier': 'finalProject'}
+[0.024923] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'cmake'}
+[0.027383] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'build'}
+[0.029369] (finalProject) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shruthir/CSE180FinalProject/src/build/finalProject', '--', '-j12', '-l12'], 'cwd': '/home/shruthir/CSE180FinalProject/src/build/finalProject', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'shruthir', 'GIT_ASKPASS': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/shruthir', 'OLDPWD': '/home/shruthir/CSE180FinalProject/src/finalProject', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b294e62f-787c-4e5f-ac3b-8a88e2ede32d.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/src/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shruthir', 'NAME': 'Shruthi', 'WSL_INTEROP': '/run/WSL/358_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/shrut/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shrut/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shrut/.dotnet/tools:/mnt/c/Program Files/OpenSSL-Win64/bin:/snap/bin:/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-3cb0f3f0306d994c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/shruthir/.vscode-server/data/User/workspaceStorage/ca5834bb49b378f92ca2e45958a037b0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4b0cbc8f42.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/src/install/finalProject:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/shruthir/CSE180FinalProject/src/build/finalProject', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/src/install/finalProject:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.082717] (finalProject) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.097730] (-) TimerEvent: {}
+[0.198355] (-) TimerEvent: {}
+[0.298924] (-) TimerEvent: {}
+[0.399437] (-) TimerEvent: {}
+[0.499918] (-) TimerEvent: {}
+[0.505004] (finalProject) StdoutLine: {'line': b'-- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.600090] (-) TimerEvent: {}
+[0.701011] (-) TimerEvent: {}
+[0.803513] (-) TimerEvent: {}
+[0.904042] (-) TimerEvent: {}
+[0.929005] (finalProject) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.949931] (finalProject) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.974585] (finalProject) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.999949] (finalProject) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.004359] (-) TimerEvent: {}
+[1.098658] (finalProject) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.104033] (finalProject) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.104552] (-) TimerEvent: {}
+[1.205068] (-) TimerEvent: {}
+[1.305728] (-) TimerEvent: {}
+[1.406512] (-) TimerEvent: {}
+[1.507602] (-) TimerEvent: {}
+[1.608510] (-) TimerEvent: {}
+[1.683276] (finalProject) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.708672] (-) TimerEvent: {}
+[1.809248] (-) TimerEvent: {}
+[1.909915] (-) TimerEvent: {}
+[2.010390] (-) TimerEvent: {}
+[2.105578] (finalProject) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.110615] (-) TimerEvent: {}
+[2.211215] (-) TimerEvent: {}
+[2.221710] (finalProject) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.272997] (finalProject) StdoutLine: {'line': b'-- Found nav2_msgs: 1.3.10 (/opt/ros/jazzy/share/nav2_msgs/cmake)\n'}
+[2.311458] (-) TimerEvent: {}
+[2.412106] (-) TimerEvent: {}
+[2.512763] (-) TimerEvent: {}
+[2.583253] (finalProject) StdoutLine: {'line': b'-- Found rclcpp_action: 28.1.11 (/opt/ros/jazzy/share/rclcpp_action/cmake)\n'}
+[2.611179] (finalProject) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.612899] (-) TimerEvent: {}
+[2.713331] (-) TimerEvent: {}
+[2.797137] (finalProject) StderrLine: {'line': b'WARNING: Package name "finalProject" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[2.813570] (-) TimerEvent: {}
+[2.907434] (finalProject) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.913793] (-) TimerEvent: {}
+[2.914617] (finalProject) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.915688] (finalProject) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/shruthir/CSE180FinalProject/src/finalProject/include\n'}
+[2.915852] (finalProject) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.926962] (finalProject) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.928452] (finalProject) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.930368] (finalProject) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.930689] (finalProject) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[2.936042] (finalProject) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.936779] (finalProject) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.946929] (finalProject) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.947513] (finalProject) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.949236] (finalProject) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.954782] (finalProject) StdoutLine: {'line': b'-- Configuring done (2.9s)\n'}
+[3.003887] (finalProject) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.013997] (-) TimerEvent: {}
+[3.016613] (finalProject) StdoutLine: {'line': b'-- Build files have been written to: /home/shruthir/CSE180FinalProject/src/build/finalProject\n'}
+[3.114220] (-) TimerEvent: {}
+[3.120102] (finalProject) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/perception_node.dir/src/perception.cpp.o\x1b[0m\n'}
+[3.131878] (finalProject) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o\x1b[0m\n'}
+[3.134988] (finalProject) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/locomotion_node.dir/src/locomotion.cpp.o\x1b[0m\n'}
+[3.214502] (-) TimerEvent: {}
+[3.315233] (-) TimerEvent: {}
+[3.415964] (-) TimerEvent: {}
+[3.516616] (-) TimerEvent: {}
+[3.617181] (-) TimerEvent: {}
+[3.718222] (-) TimerEvent: {}
+[3.818828] (-) TimerEvent: {}
+[3.919180] (-) TimerEvent: {}
+[4.019877] (-) TimerEvent: {}
+[4.120454] (-) TimerEvent: {}
+[4.231086] (-) TimerEvent: {}
+[4.332987] (-) TimerEvent: {}
+[4.433912] (-) TimerEvent: {}
+[4.534859] (-) TimerEvent: {}
+[4.635597] (-) TimerEvent: {}
+[4.736372] (-) TimerEvent: {}
+[4.837109] (-) TimerEvent: {}
+[4.937790] (-) TimerEvent: {}
+[5.038598] (-) TimerEvent: {}
+[5.139055] (-) TimerEvent: {}
+[5.239524] (-) TimerEvent: {}
+[5.340014] (-) TimerEvent: {}
+[5.440671] (-) TimerEvent: {}
+[5.541583] (-) TimerEvent: {}
+[5.642624] (-) TimerEvent: {}
+[5.743465] (-) TimerEvent: {}
+[5.844277] (-) TimerEvent: {}
+[5.945041] (-) TimerEvent: {}
+[6.045767] (-) TimerEvent: {}
+[6.146386] (-) TimerEvent: {}
+[6.247117] (-) TimerEvent: {}
+[6.347770] (-) TimerEvent: {}
+[6.448282] (-) TimerEvent: {}
+[6.549268] (-) TimerEvent: {}
+[6.649938] (-) TimerEvent: {}
+[6.750588] (-) TimerEvent: {}
+[6.851177] (-) TimerEvent: {}
+[6.952071] (-) TimerEvent: {}
+[7.052773] (-) TimerEvent: {}
+[7.153546] (-) TimerEvent: {}
+[7.254063] (-) TimerEvent: {}
+[7.354650] (-) TimerEvent: {}
+[7.459545] (-) TimerEvent: {}
+[7.560136] (-) TimerEvent: {}
+[7.660956] (-) TimerEvent: {}
+[7.761721] (-) TimerEvent: {}
+[7.862362] (-) TimerEvent: {}
+[7.963110] (-) TimerEvent: {}
+[8.063757] (-) TimerEvent: {}
+[8.164493] (-) TimerEvent: {}
+[8.265188] (-) TimerEvent: {}
+[8.365906] (-) TimerEvent: {}
+[8.466661] (-) TimerEvent: {}
+[8.567588] (-) TimerEvent: {}
+[8.668487] (-) TimerEvent: {}
+[8.769129] (-) TimerEvent: {}
+[8.869713] (-) TimerEvent: {}
+[8.970281] (-) TimerEvent: {}
+[9.070964] (-) TimerEvent: {}
+[9.171734] (-) TimerEvent: {}
+[9.272320] (-) TimerEvent: {}
+[9.373014] (-) TimerEvent: {}
+[9.473809] (-) TimerEvent: {}
+[9.574668] (-) TimerEvent: {}
+[9.675402] (-) TimerEvent: {}
+[9.776020] (-) TimerEvent: {}
+[9.876779] (-) TimerEvent: {}
+[9.977704] (-) TimerEvent: {}
+[10.078489] (-) TimerEvent: {}
+[10.179197] (-) TimerEvent: {}
+[10.280055] (-) TimerEvent: {}
+[10.380804] (-) TimerEvent: {}
+[10.481535] (-) TimerEvent: {}
+[10.582431] (-) TimerEvent: {}
+[10.683067] (-) TimerEvent: {}
+[10.783938] (-) TimerEvent: {}
+[10.884728] (-) TimerEvent: {}
+[10.985356] (-) TimerEvent: {}
+[11.086009] (-) TimerEvent: {}
+[11.190795] (-) TimerEvent: {}
+[11.291529] (-) TimerEvent: {}
+[11.392243] (-) TimerEvent: {}
+[11.492859] (-) TimerEvent: {}
+[11.593591] (-) TimerEvent: {}
+[11.694275] (-) TimerEvent: {}
+[11.794904] (-) TimerEvent: {}
+[11.896013] (-) TimerEvent: {}
+[11.996899] (-) TimerEvent: {}
+[12.097694] (-) TimerEvent: {}
+[12.198441] (-) TimerEvent: {}
+[12.299132] (-) TimerEvent: {}
+[12.400000] (-) TimerEvent: {}
+[12.500751] (-) TimerEvent: {}
+[12.604514] (-) TimerEvent: {}
+[12.705225] (-) TimerEvent: {}
+[12.806395] (-) TimerEvent: {}
+[12.907199] (-) TimerEvent: {}
+[13.008030] (-) TimerEvent: {}
+[13.108723] (-) TimerEvent: {}
+[13.209543] (-) TimerEvent: {}
+[13.310426] (-) TimerEvent: {}
+[13.411037] (-) TimerEvent: {}
+[13.511863] (-) TimerEvent: {}
+[13.612607] (-) TimerEvent: {}
+[13.713313] (-) TimerEvent: {}
+[13.814195] (-) TimerEvent: {}
+[13.915041] (-) TimerEvent: {}
+[14.016022] (-) TimerEvent: {}
+[14.116818] (-) TimerEvent: {}
+[14.217379] (-) TimerEvent: {}
+[14.317958] (-) TimerEvent: {}
+[14.418610] (-) TimerEvent: {}
+[14.519323] (-) TimerEvent: {}
+[14.620001] (-) TimerEvent: {}
+[14.720573] (-) TimerEvent: {}
+[14.821228] (-) TimerEvent: {}
+[14.921929] (-) TimerEvent: {}
+[15.022521] (-) TimerEvent: {}
+[15.123263] (-) TimerEvent: {}
+[15.224042] (-) TimerEvent: {}
+[15.324710] (-) TimerEvent: {}
+[15.425570] (-) TimerEvent: {}
+[15.526278] (-) TimerEvent: {}
+[15.626984] (-) TimerEvent: {}
+[15.727841] (-) TimerEvent: {}
+[15.832379] (-) TimerEvent: {}
+[15.933104] (-) TimerEvent: {}
+[16.033918] (-) TimerEvent: {}
+[16.134640] (-) TimerEvent: {}
+[16.235261] (-) TimerEvent: {}
+[16.336058] (-) TimerEvent: {}
+[16.437027] (-) TimerEvent: {}
+[16.537635] (-) TimerEvent: {}
+[16.638466] (-) TimerEvent: {}
+[16.739005] (-) TimerEvent: {}
+[16.839635] (-) TimerEvent: {}
+[16.940282] (-) TimerEvent: {}
+[17.040967] (-) TimerEvent: {}
+[17.141782] (-) TimerEvent: {}
+[17.242515] (-) TimerEvent: {}
+[17.343136] (-) TimerEvent: {}
+[17.444082] (-) TimerEvent: {}
+[17.544949] (-) TimerEvent: {}
+[17.645459] (-) TimerEvent: {}
+[17.746127] (-) TimerEvent: {}
+[17.846987] (-) TimerEvent: {}
+[17.947674] (-) TimerEvent: {}
+[18.048621] (-) TimerEvent: {}
+[18.149226] (-) TimerEvent: {}
+[18.249679] (-) TimerEvent: {}
+[18.350414] (-) TimerEvent: {}
+[18.451516] (-) TimerEvent: {}
+[18.552222] (-) TimerEvent: {}
+[18.652980] (-) TimerEvent: {}
+[18.753757] (-) TimerEvent: {}
+[18.854546] (-) TimerEvent: {}
+[18.955340] (-) TimerEvent: {}
+[19.055955] (-) TimerEvent: {}
+[19.156509] (-) TimerEvent: {}
+[19.257389] (-) TimerEvent: {}
+[19.358185] (-) TimerEvent: {}
+[19.458674] (-) TimerEvent: {}
+[19.559250] (-) TimerEvent: {}
+[19.659978] (-) TimerEvent: {}
+[19.760541] (-) TimerEvent: {}
+[19.861232] (-) TimerEvent: {}
+[19.961896] (-) TimerEvent: {}
+[20.062544] (-) TimerEvent: {}
+[20.163282] (-) TimerEvent: {}
+[20.264484] (-) TimerEvent: {}
+[20.365174] (-) TimerEvent: {}
+[20.465891] (-) TimerEvent: {}
+[20.566554] (-) TimerEvent: {}
+[20.667637] (-) TimerEvent: {}
+[20.768764] (-) TimerEvent: {}
+[20.869372] (-) TimerEvent: {}
+[20.970112] (-) TimerEvent: {}
+[21.070905] (-) TimerEvent: {}
+[21.171641] (-) TimerEvent: {}
+[21.272271] (-) TimerEvent: {}
+[21.372919] (-) TimerEvent: {}
+[21.473535] (-) TimerEvent: {}
+[21.574249] (-) TimerEvent: {}
+[21.674735] (-) TimerEvent: {}
+[21.775332] (-) TimerEvent: {}
+[21.876023] (-) TimerEvent: {}
+[21.976510] (-) TimerEvent: {}
+[22.077065] (-) TimerEvent: {}
+[22.177652] (-) TimerEvent: {}
+[22.278652] (-) TimerEvent: {}
+[22.379551] (-) TimerEvent: {}
+[22.480129] (-) TimerEvent: {}
+[22.582645] (-) TimerEvent: {}
+[22.683371] (-) TimerEvent: {}
+[22.786426] (-) TimerEvent: {}
+[22.887483] (-) TimerEvent: {}
+[22.988292] (-) TimerEvent: {}
+[23.089141] (-) TimerEvent: {}
+[23.189856] (-) TimerEvent: {}
+[23.290433] (-) TimerEvent: {}
+[23.391165] (-) TimerEvent: {}
+[23.491941] (-) TimerEvent: {}
+[23.592689] (-) TimerEvent: {}
+[23.681997] (finalProject) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable locomotion_node\x1b[0m\n'}
+[23.692863] (-) TimerEvent: {}
+[23.793671] (-) TimerEvent: {}
+[23.894451] (-) TimerEvent: {}
+[23.995164] (-) TimerEvent: {}
+[24.095742] (-) TimerEvent: {}
+[24.196312] (-) TimerEvent: {}
+[24.296856] (-) TimerEvent: {}
+[24.397749] (-) TimerEvent: {}
+[24.498667] (-) TimerEvent: {}
+[24.556236] (finalProject) StdoutLine: {'line': b'[ 66%] Built target locomotion_node\n'}
+[24.598893] (-) TimerEvent: {}
+[24.699529] (-) TimerEvent: {}
+[24.800257] (-) TimerEvent: {}
+[24.900883] (-) TimerEvent: {}
+[25.001702] (-) TimerEvent: {}
+[25.102387] (-) TimerEvent: {}
+[25.203084] (-) TimerEvent: {}
+[25.303877] (-) TimerEvent: {}
+[25.404557] (-) TimerEvent: {}
+[25.505352] (-) TimerEvent: {}
+[25.606001] (-) TimerEvent: {}
+[25.691462] (finalProject) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable perception_node\x1b[0m\n'}
+[25.706254] (-) TimerEvent: {}
+[25.807229] (-) TimerEvent: {}
+[25.908127] (-) TimerEvent: {}
+[26.008941] (-) TimerEvent: {}
+[26.109846] (-) TimerEvent: {}
+[26.210562] (-) TimerEvent: {}
+[26.311407] (-) TimerEvent: {}
+[26.412076] (-) TimerEvent: {}
+[26.512781] (-) TimerEvent: {}
+[26.537769] (finalProject) StdoutLine: {'line': b'[ 83%] Built target perception_node\n'}
+[26.616152] (-) TimerEvent: {}
+[26.708908] (finalProject) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable navigation_node\x1b[0m\n'}
+[26.716390] (-) TimerEvent: {}
+[26.817323] (-) TimerEvent: {}
+[26.918533] (-) TimerEvent: {}
+[27.020223] (-) TimerEvent: {}
+[27.121099] (-) TimerEvent: {}
+[27.221884] (-) TimerEvent: {}
+[27.322618] (-) TimerEvent: {}
+[27.423398] (-) TimerEvent: {}
+[27.524039] (-) TimerEvent: {}
+[27.624898] (-) TimerEvent: {}
+[27.725698] (-) TimerEvent: {}
+[27.826764] (-) TimerEvent: {}
+[27.879031] (finalProject) StdoutLine: {'line': b'[100%] Built target navigation_node\n'}
+[27.907474] (finalProject) CommandEnded: {'returncode': 0}
+[27.908203] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'install'}
+[27.926628] (finalProject) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shruthir/CSE180FinalProject/src/build/finalProject'], 'cwd': '/home/shruthir/CSE180FinalProject/src/build/finalProject', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'shruthir', 'GIT_ASKPASS': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/shruthir', 'OLDPWD': '/home/shruthir/CSE180FinalProject/src/finalProject', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b294e62f-787c-4e5f-ac3b-8a88e2ede32d.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/src/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shruthir', 'NAME': 'Shruthi', 'WSL_INTEROP': '/run/WSL/358_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/shrut/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shrut/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shrut/.dotnet/tools:/mnt/c/Program Files/OpenSSL-Win64/bin:/snap/bin:/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-3cb0f3f0306d994c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/shruthir/.vscode-server/data/User/workspaceStorage/ca5834bb49b378f92ca2e45958a037b0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4b0cbc8f42.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/src/install/finalProject:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/shruthir/CSE180FinalProject/src/build/finalProject', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/src/install/finalProject:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[27.930316] (-) TimerEvent: {}
+[27.942705] (finalProject) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.943568] (finalProject) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/navigation_node\n'}
+[27.952797] (finalProject) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/navigation_node" to ""\n'}
+[27.953761] (finalProject) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/perception_node\n'}
+[27.964162] (finalProject) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/perception_node" to ""\n'}
+[27.964699] (finalProject) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/locomotion_node\n'}
+[27.970605] (finalProject) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/locomotion_node" to ""\n'}
+[27.971338] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/ament_index/resource_index/package_run_dependencies/finalProject\n'}
+[27.971724] (finalProject) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/ament_index/resource_index/parent_prefix_path/finalProject\n'}
+[27.972313] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/ament_prefix_path.sh\n'}
+[27.972571] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/ament_prefix_path.dsv\n'}
+[27.972798] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/path.sh\n'}
+[27.972999] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/path.dsv\n'}
+[27.973286] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/local_setup.bash\n'}
+[27.973848] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/local_setup.sh\n'}
+[27.974326] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/local_setup.zsh\n'}
+[27.975336] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/local_setup.dsv\n'}
+[27.976638] (finalProject) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/package.dsv\n'}
+[27.979374] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/ament_index/resource_index/packages/finalProject\n'}
+[27.980076] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/cmake/finalProjectConfig.cmake\n'}
+[27.982939] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/cmake/finalProjectConfig-version.cmake\n'}
+[27.984096] (finalProject) StdoutLine: {'line': b'-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/package.xml\n'}
+[27.989190] (finalProject) CommandEnded: {'returncode': 0}
+[28.017928] (finalProject) JobEnded: {'identifier': 'finalProject', 'rc': 0}
+[28.020199] (-) EventReactorShutdown: {}

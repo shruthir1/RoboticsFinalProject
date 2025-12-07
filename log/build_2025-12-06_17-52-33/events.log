@@ -1,0 +1,252 @@
+[0.000000] (-) TimerEvent: {}
+[0.000508] (finder_program) JobQueued: {'identifier': 'finder_program', 'dependencies': OrderedDict()}
+[0.002060] (finder_program) JobStarted: {'identifier': 'finder_program'}
+[0.038398] (finder_program) JobProgress: {'identifier': 'finder_program', 'progress': 'cmake'}
+[0.047749] (finder_program) Command: {'cmd': ['/usr/bin/cmake', '/home/shruthir/CSE180FinalProject/src/finder_program', '-DCMAKE_INSTALL_PREFIX=/home/shruthir/CSE180FinalProject/install/finder_program'], 'cwd': '/home/shruthir/CSE180FinalProject/build/finder_program', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'shruthir', 'GIT_ASKPASS': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/shruthir', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-950849e9-53bb-4fde-8935-dc70ea3d17d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shruthir', 'NAME': 'Shruthi', 'WSL_INTEROP': '/run/WSL/337_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/shrut/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shrut/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shrut/.dotnet/tools:/mnt/c/Program Files/OpenSSL-Win64/bin:/snap/bin:/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-3cb0f3f0306d994c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/shruthir/.vscode-server/data/User/workspaceStorage/ca5834bb49b378f92ca2e45958a037b0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4b0cbc8f42.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/shruthir/CSE180FinalProject/build/finder_program', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099207] (-) TimerEvent: {}
+[0.199682] (-) TimerEvent: {}
+[0.300452] (-) TimerEvent: {}
+[0.401091] (-) TimerEvent: {}
+[0.501841] (-) TimerEvent: {}
+[0.602489] (-) TimerEvent: {}
+[0.703199] (-) TimerEvent: {}
+[0.803712] (-) TimerEvent: {}
+[0.904445] (-) TimerEvent: {}
+[1.005120] (-) TimerEvent: {}
+[1.105685] (-) TimerEvent: {}
+[1.257370] (-) TimerEvent: {}
+[1.291792] (finder_program) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.357638] (-) TimerEvent: {}
+[1.458450] (-) TimerEvent: {}
+[1.559297] (-) TimerEvent: {}
+[1.659994] (-) TimerEvent: {}
+[1.760638] (-) TimerEvent: {}
+[1.861455] (-) TimerEvent: {}
+[1.962800] (-) TimerEvent: {}
+[2.063207] (-) TimerEvent: {}
+[2.163733] (-) TimerEvent: {}
+[2.264427] (-) TimerEvent: {}
+[2.365244] (-) TimerEvent: {}
+[2.466011] (-) TimerEvent: {}
+[2.566371] (-) TimerEvent: {}
+[2.666916] (-) TimerEvent: {}
+[2.767921] (-) TimerEvent: {}
+[2.868840] (-) TimerEvent: {}
+[2.969314] (-) TimerEvent: {}
+[3.069642] (-) TimerEvent: {}
+[3.169955] (-) TimerEvent: {}
+[3.270681] (-) TimerEvent: {}
+[3.371696] (-) TimerEvent: {}
+[3.472216] (-) TimerEvent: {}
+[3.572815] (-) TimerEvent: {}
+[3.673435] (-) TimerEvent: {}
+[3.773759] (-) TimerEvent: {}
+[3.899404] (-) TimerEvent: {}
+[4.039589] (-) TimerEvent: {}
+[4.145616] (-) TimerEvent: {}
+[4.254802] (-) TimerEvent: {}
+[4.355501] (-) TimerEvent: {}
+[4.436771] (finder_program) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.455782] (-) TimerEvent: {}
+[4.556469] (-) TimerEvent: {}
+[4.657078] (-) TimerEvent: {}
+[4.757772] (-) TimerEvent: {}
+[4.863639] (-) TimerEvent: {}
+[4.964333] (-) TimerEvent: {}
+[5.065238] (-) TimerEvent: {}
+[5.165800] (-) TimerEvent: {}
+[5.266541] (-) TimerEvent: {}
+[5.366996] (-) TimerEvent: {}
+[5.467871] (-) TimerEvent: {}
+[5.568530] (-) TimerEvent: {}
+[5.669413] (-) TimerEvent: {}
+[5.770141] (-) TimerEvent: {}
+[5.871375] (-) TimerEvent: {}
+[5.944693] (finder_program) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.971638] (-) TimerEvent: {}
+[6.072230] (-) TimerEvent: {}
+[6.172969] (-) TimerEvent: {}
+[6.274020] (-) TimerEvent: {}
+[6.375004] (-) TimerEvent: {}
+[6.475338] (-) TimerEvent: {}
+[6.575812] (-) TimerEvent: {}
+[6.676676] (-) TimerEvent: {}
+[6.777144] (-) TimerEvent: {}
+[6.878573] (-) TimerEvent: {}
+[6.979435] (-) TimerEvent: {}
+[7.081445] (-) TimerEvent: {}
+[7.103424] (finder_program) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.120589] (finder_program) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.122851] (finder_program) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.124843] (finder_program) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.180886] (-) TimerEvent: {}
+[7.281616] (-) TimerEvent: {}
+[7.382185] (-) TimerEvent: {}
+[7.525354] (-) TimerEvent: {}
+[7.626027] (-) TimerEvent: {}
+[7.780575] (-) TimerEvent: {}
+[7.806568] (finder_program) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.922210] (-) TimerEvent: {}
+[8.025727] (-) TimerEvent: {}
+[8.128287] (-) TimerEvent: {}
+[8.228902] (-) TimerEvent: {}
+[8.404409] (-) TimerEvent: {}
+[8.547282] (-) TimerEvent: {}
+[8.647998] (-) TimerEvent: {}
+[8.749569] (-) TimerEvent: {}
+[8.851039] (-) TimerEvent: {}
+[9.011693] (-) TimerEvent: {}
+[9.166805] (-) TimerEvent: {}
+[9.335420] (-) TimerEvent: {}
+[9.462563] (-) TimerEvent: {}
+[9.563303] (-) TimerEvent: {}
+[9.667803] (-) TimerEvent: {}
+[9.768354] (-) TimerEvent: {}
+[9.837349] (finder_program) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.852159] (finder_program) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.852893] (finder_program) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.853912] (finder_program) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.868506] (-) TimerEvent: {}
+[9.917527] (finder_program) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[9.968603] (-) TimerEvent: {}
+[10.069263] (-) TimerEvent: {}
+[10.169732] (-) TimerEvent: {}
+[10.365811] (-) TimerEvent: {}
+[10.467273] (-) TimerEvent: {}
+[10.568898] (-) TimerEvent: {}
+[10.669665] (-) TimerEvent: {}
+[10.838730] (-) TimerEvent: {}
+[10.956813] (-) TimerEvent: {}
+[11.057478] (-) TimerEvent: {}
+[11.200333] (-) TimerEvent: {}
+[11.304060] (-) TimerEvent: {}
+[11.414510] (-) TimerEvent: {}
+[11.515511] (-) TimerEvent: {}
+[11.572744] (finder_program) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[11.615699] (-) TimerEvent: {}
+[11.716361] (-) TimerEvent: {}
+[11.817001] (-) TimerEvent: {}
+[11.917763] (-) TimerEvent: {}
+[11.976399] (finder_program) StdoutLine: {'line': b'-- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[12.017949] (-) TimerEvent: {}
+[12.118936] (-) TimerEvent: {}
+[12.219641] (-) TimerEvent: {}
+[12.320114] (-) TimerEvent: {}
+[12.420810] (-) TimerEvent: {}
+[12.477906] (finder_program) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[12.521025] (-) TimerEvent: {}
+[12.522750] (finder_program) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[12.602591] (finder_program) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.621225] (-) TimerEvent: {}
+[12.667014] (finder_program) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.721474] (-) TimerEvent: {}
+[12.822083] (-) TimerEvent: {}
+[12.922683] (-) TimerEvent: {}
+[12.945680] (finder_program) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[12.960294] (finder_program) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[13.022789] (-) TimerEvent: {}
+[13.123453] (-) TimerEvent: {}
+[13.224441] (-) TimerEvent: {}
+[13.325297] (-) TimerEvent: {}
+[13.374729] (finder_program) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[13.425519] (-) TimerEvent: {}
+[13.526152] (-) TimerEvent: {}
+[13.626638] (-) TimerEvent: {}
+[13.727546] (-) TimerEvent: {}
+[13.827941] (-) TimerEvent: {}
+[13.928427] (-) TimerEvent: {}
+[14.030247] (-) TimerEvent: {}
+[14.131277] (-) TimerEvent: {}
+[14.152564] (finder_program) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[14.231357] (-) TimerEvent: {}
+[14.331802] (-) TimerEvent: {}
+[14.432359] (-) TimerEvent: {}
+[14.556927] (-) TimerEvent: {}
+[14.658167] (-) TimerEvent: {}
+[14.720625] (finder_program) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[14.758410] (-) TimerEvent: {}
+[14.858872] (-) TimerEvent: {}
+[14.959597] (-) TimerEvent: {}
+[15.064758] (-) TimerEvent: {}
+[15.181068] (-) TimerEvent: {}
+[15.289862] (-) TimerEvent: {}
+[15.391248] (-) TimerEvent: {}
+[15.491855] (-) TimerEvent: {}
+[15.592641] (-) TimerEvent: {}
+[15.678893] (finder_program) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[15.692871] (-) TimerEvent: {}
+[15.793619] (-) TimerEvent: {}
+[15.894336] (-) TimerEvent: {}
+[15.941690] (finder_program) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[15.994577] (-) TimerEvent: {}
+[16.032127] (finder_program) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[16.094807] (-) TimerEvent: {}
+[16.195456] (-) TimerEvent: {}
+[16.296078] (-) TimerEvent: {}
+[16.396698] (-) TimerEvent: {}
+[16.658254] (-) TimerEvent: {}
+[16.759454] (-) TimerEvent: {}
+[16.861030] (-) TimerEvent: {}
+[16.962615] (-) TimerEvent: {}
+[17.063285] (-) TimerEvent: {}
+[17.163978] (-) TimerEvent: {}
+[17.264577] (-) TimerEvent: {}
+[17.364957] (-) TimerEvent: {}
+[17.450364] (finder_program) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[17.465198] (-) TimerEvent: {}
+[17.545155] (finder_program) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[17.545524] (finder_program) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[17.565433] (-) TimerEvent: {}
+[17.573517] (finder_program) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[17.673560] (-) TimerEvent: {}
+[17.723737] (finder_program) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[17.729209] (finder_program) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[17.747135] (finder_program) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[17.778616] (-) TimerEvent: {}
+[17.791162] (finder_program) StdoutLine: {'line': b'-- Configuring done (17.5s)\n'}
+[17.879173] (-) TimerEvent: {}
+[17.931031] (finder_program) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[17.979422] (-) TimerEvent: {}
+[17.990075] (finder_program) StdoutLine: {'line': b'-- Build files have been written to: /home/shruthir/CSE180FinalProject/build/finder_program\n'}
+[18.080444] (-) TimerEvent: {}
+[18.202724] (-) TimerEvent: {}
+[18.306367] (-) TimerEvent: {}
+[18.406766] (-) TimerEvent: {}
+[18.507618] (-) TimerEvent: {}
+[18.626679] (-) TimerEvent: {}
+[18.731770] (-) TimerEvent: {}
+[18.839165] (-) TimerEvent: {}
+[18.883313] (finder_program) CommandEnded: {'returncode': 0}
+[18.946969] (-) TimerEvent: {}
+[18.972348] (finder_program) JobProgress: {'identifier': 'finder_program', 'progress': 'build'}
+[18.979396] (finder_program) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shruthir/CSE180FinalProject/build/finder_program', '--', '-j12', '-l12'], 'cwd': '/home/shruthir/CSE180FinalProject/build/finder_program', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'shruthir', 'GIT_ASKPASS': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/shruthir', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-950849e9-53bb-4fde-8935-dc70ea3d17d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shruthir', 'NAME': 'Shruthi', 'WSL_INTEROP': '/run/WSL/337_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/shrut/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shrut/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shrut/.dotnet/tools:/mnt/c/Program Files/OpenSSL-Win64/bin:/snap/bin:/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-3cb0f3f0306d994c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/shruthir/.vscode-server/data/User/workspaceStorage/ca5834bb49b378f92ca2e45958a037b0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4b0cbc8f42.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/shruthir/CSE180FinalProject/build/finder_program', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[19.047219] (-) TimerEvent: {}
+[19.147928] (-) TimerEvent: {}
+[19.249211] (-) TimerEvent: {}
+[19.350005] (-) TimerEvent: {}
+[19.449513] (finder_program) CommandEnded: {'returncode': 0}
+[19.458494] (-) TimerEvent: {}
+[19.469851] (finder_program) JobProgress: {'identifier': 'finder_program', 'progress': 'install'}
+[19.503091] (finder_program) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shruthir/CSE180FinalProject/build/finder_program'], 'cwd': '/home/shruthir/CSE180FinalProject/build/finder_program', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'shruthir', 'GIT_ASKPASS': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/shruthir', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-950849e9-53bb-4fde-8935-dc70ea3d17d5.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shruthir', 'NAME': 'Shruthi', 'WSL_INTEROP': '/run/WSL/337_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/shrut/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shrut/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shrut/.dotnet/tools:/mnt/c/Program Files/OpenSSL-Win64/bin:/snap/bin:/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-3cb0f3f0306d994c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/shruthir/.vscode-server/data/User/workspaceStorage/ca5834bb49b378f92ca2e45958a037b0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4b0cbc8f42.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/shruthir/CSE180FinalProject/build/finder_program', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[19.537800] (finder_program) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.540706] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/ament_index/resource_index/package_run_dependencies/finder_program\n'}
+[19.542210] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/ament_index/resource_index/parent_prefix_path/finder_program\n'}
+[19.544129] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/environment/ament_prefix_path.sh\n'}
+[19.545023] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/environment/ament_prefix_path.dsv\n'}
+[19.545614] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/environment/path.sh\n'}
+[19.546469] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/environment/path.dsv\n'}
+[19.547201] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/local_setup.bash\n'}
+[19.548350] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/local_setup.sh\n'}
+[19.549046] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/local_setup.zsh\n'}
+[19.549710] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/local_setup.dsv\n'}
+[19.552455] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/package.dsv\n'}
+[19.555076] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/ament_index/resource_index/packages/finder_program\n'}
+[19.556526] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/cmake/finder_programConfig.cmake\n'}
+[19.557146] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/cmake/finder_programConfig-version.cmake\n'}
+[19.557996] (finder_program) StdoutLine: {'line': b'-- Installing: /home/shruthir/CSE180FinalProject/install/finder_program/share/finder_program/package.xml\n'}
+[19.558661] (-) TimerEvent: {}
+[19.568013] (finder_program) CommandEnded: {'returncode': 0}
+[19.662978] (-) TimerEvent: {}
+[19.819633] (-) TimerEvent: {}
+[19.875280] (finder_program) JobEnded: {'identifier': 'finder_program', 'rc': 0}
+[19.897187] (-) EventReactorShutdown: {}

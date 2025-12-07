@@ -1,0 +1,32 @@
+[0.026s] Invoking command in '/home/shruthir/CSE180FinalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
+[0.068s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.491s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.934s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.952s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.979s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.000s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.115s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.119s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.749s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.247s] -- Found rclcpp_action: 28.1.11 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[2.392s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[5.645s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[5.646s]   By not providing "Findnav2_msgs.cmake" in CMAKE_MODULE_PATH this project
+[5.646s]   has asked CMake to find a package configuration file provided by
+[5.646s]   "nav2_msgs", but CMake did not find one.
+[5.647s] 
+[5.647s]   Could not find a package configuration file provided by "nav2_msgs" with
+[5.647s]   any of the following names:
+[5.648s] 
+[5.648s]     nav2_msgsConfig.cmake
+[5.648s]     nav2_msgs-config.cmake
+[5.649s] 
+[5.650s]   Add the installation prefix of "nav2_msgs" to CMAKE_PREFIX_PATH or set
+[5.650s]   "nav2_msgs_DIR" to a directory containing one of the above files.  If
+[5.650s]   "nav2_msgs" provides a separate development package or SDK, be sure it has
+[5.650s]   been installed.
+[5.651s] 
+[5.651s] [0m
+[5.652s] -- Configuring incomplete, errors occurred!
+[5.665s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[5.673s] Invoked command in '/home/shruthir/CSE180FinalProject/build/finalProject' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12

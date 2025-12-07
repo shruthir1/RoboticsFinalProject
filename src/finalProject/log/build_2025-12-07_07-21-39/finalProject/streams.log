@@ -1,0 +1,4 @@
+[0.041s] Invoking command in '/home/shruthir/CSE180FinalProject/src/finalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/shruthir/CSE180FinalProject/src/finalProject -DCMAKE_INSTALL_PREFIX=/home/shruthir/CSE180FinalProject/src/finalProject/install/finalProject
+[0.540s] -- The C compiler identification is GNU 13.3.0
+[2.380s] -- The CXX compiler identification is GNU 13.3.0
+[2.791s] Invoked command in '/home/shruthir/CSE180FinalProject/src/finalProject/build/finalProject' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/shruthir/CSE180FinalProject/src/finalProject -DCMAKE_INSTALL_PREFIX=/home/shruthir/CSE180FinalProject/src/finalProject/install/finalProject
