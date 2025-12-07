@@ -8,16 +8,20 @@
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <nav2_msgs/action/navigate_to_pose.hpp>
 
+
+
 using namespace std::chrono_literals;
 
 class NavigationNode : public rclcpp::Node{
 public:
-  using NavigateToPose = nav2_msgs::action::NavigateToPose;
-  using GoalHandleNav = rclcpp_action::ClientGoalHandle<NavigateToPose>;
+  using GoalHandleNavigate = rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>;
+  using GoalHandleFollowPath = rclcpp_action::ClientGoalHandle<nav2_msgs::action::FollowPath>;
+
 
   NavigationNode() : Node("navigation_node"), current_wp_(0), goal_in_progress_(false){
-    nav_client_ = rclcpp_action::create_client<NavigateToPose>(
-      this, "navigate_to_pose");
+    nav_client_ = rclcpp_action::create_client<GoToPose>(
+    this, "go_to_pose");
+
 
     humans_sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
       "/humans_moved", 10,
@@ -64,7 +68,7 @@ private:
 
     const auto &goal_pose = waypoints_[current_wp_];
 
-    NavigateToPose::Goal goal;
+    GoToPose::Goal goal;
     goal.pose = goal_pose;
 
     RCLCPP_INFO(get_logger(),
@@ -144,3 +148,4 @@ int main(int argc, char **argv){
   rclcpp::shutdown();
   return 0;
 }
+

@@ -7,20 +7,17 @@ class PerceptionNode : public rclcpp::Node{
 public:
   PerceptionNode() : Node("perception_node"), scan_count_(0) {
     scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
-      "/scan", 10,
-      std::bind(&PerceptionNode::scanCallback, this, std::placeholders::_1));
+      "/scan", 10, std::bind(&PerceptionNode::scanCallback, this, std::placeholders::_1));
 
     humans_pub_ = this->create_publisher<geometry_msgs::msg::PoseArray>(
       "/humans_moved", 10);
 
-    RCLCPP_INFO(get_logger(), "PerceptionNode started (fake detection mode).");
+    RCLCPP_INFO(get_logger(), "PerceptionNode started");
   }
 
 private:
   void scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
-    (void)msg;  // unused for now
-
-    // Fake detection: after 10 scans, publish a "moved human" pose once
+    (void)msg;  
     scan_count_++;
     if (scan_count_ == 10) {
       geometry_msgs::msg::PoseArray arr;

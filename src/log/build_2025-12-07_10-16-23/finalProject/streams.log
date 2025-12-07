@@ -1,0 +1,83 @@
+[0.088s] Invoking command in '/home/shruthir/CSE180FinalProject/src/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/shruthir/CSE180FinalProject/src/finalProject -DCMAKE_INSTALL_PREFIX=/home/shruthir/CSE180FinalProject/src/install/finalProject
+[1.375s] -- The C compiler identification is GNU 13.3.0
+[3.411s] -- The CXX compiler identification is GNU 13.3.0
+[5.174s] -- Detecting C compiler ABI info
+[5.916s] -- Detecting C compiler ABI info - done
+[5.951s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.954s] -- Detecting C compile features
+[5.963s] -- Detecting C compile features - done
+[6.233s] -- Detecting CXX compiler ABI info
+[7.137s] -- Detecting CXX compiler ABI info - done
+[7.162s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.163s] -- Detecting CXX compile features
+[7.164s] -- Detecting CXX compile features - done
+[7.370s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.838s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[8.442s] -- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+[9.169s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[9.262s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[9.432s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.560s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.131s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[10.160s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[10.684s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[11.316s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[11.731s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.568s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[12.992s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[13.178s] -- Found nav2_msgs: 1.3.10 (/opt/ros/jazzy/share/nav2_msgs/cmake)
+[13.726s] -- Found rclcpp_action: 28.1.11 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[13.830s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[14.124s] WARNING: Package name "finalProject" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[14.388s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.401s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.402s] -- Configured cppcheck include dirs: /home/shruthir/CSE180FinalProject/src/finalProject/include
+[14.403s] -- Configured cppcheck exclude dirs and/or files: 
+[14.420s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.421s] -- Configured cpplint exclude dirs and/or files: 
+[14.432s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.433s] -- Configured 'flake8' exclude dirs and/or files: 
+[14.446s] -- Added test 'lint_cmake' to check CMake code style
+[14.456s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[14.473s] -- Added test 'uncrustify' to check C / C++ code style
+[14.475s] -- Configured uncrustify additional arguments: 
+[14.485s] -- Added test 'xmllint' to check XML markup files
+[14.502s] -- Configuring done (14.3s)
+[14.624s] -- Generating done (0.1s)
+[14.649s] -- Build files have been written to: /home/shruthir/CSE180FinalProject/src/build/finalProject
+[14.684s] Invoked command in '/home/shruthir/CSE180FinalProject/src/build/finalProject' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/shruthir/CSE180FinalProject/src/finalProject -DCMAKE_INSTALL_PREFIX=/home/shruthir/CSE180FinalProject/src/install/finalProject
+[14.685s] Invoking command in '/home/shruthir/CSE180FinalProject/src/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/src/build/finalProject -- -j12 -l12
+[14.864s] [ 16%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o[0m
+[37.839s] [ 33%] [32m[1mLinking CXX executable navigation_node[0m
+[39.176s] [ 33%] Built target navigation_node
+[39.229s] [ 50%] [32mBuilding CXX object CMakeFiles/locomotion_node.dir/src/locomotion.cpp.o[0m
+[62.949s] [ 66%] [32m[1mLinking CXX executable locomotion_node[0m
+[64.225s] [ 66%] Built target locomotion_node
+[64.339s] [ 83%] [32mBuilding CXX object CMakeFiles/perception_node.dir/src/perception.cpp.o[0m
+[92.358s] [100%] [32m[1mLinking CXX executable perception_node[0m
+[93.822s] [100%] Built target perception_node
+[93.853s] Invoked command in '/home/shruthir/CSE180FinalProject/src/build/finalProject' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/src/build/finalProject -- -j12 -l12
+[93.898s] Invoking command in '/home/shruthir/CSE180FinalProject/src/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shruthir/CSE180FinalProject/src/build/finalProject
+[93.937s] -- Install configuration: ""
+[93.945s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/navigation_node
+[94.129s] -- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/navigation_node" to ""
+[94.133s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/perception_node
+[94.195s] -- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/perception_node" to ""
+[94.197s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/locomotion_node
+[94.310s] -- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/locomotion_node" to ""
+[94.310s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/ament_index/resource_index/package_run_dependencies/finalProject
+[94.312s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/ament_index/resource_index/parent_prefix_path/finalProject
+[94.314s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/ament_prefix_path.sh
+[94.316s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/ament_prefix_path.dsv
+[94.317s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/path.sh
+[94.317s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/path.dsv
+[94.319s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/local_setup.bash
+[94.319s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/local_setup.sh
+[94.321s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/local_setup.zsh
+[94.321s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/local_setup.dsv
+[94.322s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/package.dsv
+[94.324s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/ament_index/resource_index/packages/finalProject
+[94.325s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/cmake/finalProjectConfig.cmake
+[94.329s] -- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/cmake/finalProjectConfig-version.cmake
+[94.331s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/package.xml
+[94.355s] Invoked command in '/home/shruthir/CSE180FinalProject/src/build/finalProject' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shruthir/CSE180FinalProject/src/build/finalProject

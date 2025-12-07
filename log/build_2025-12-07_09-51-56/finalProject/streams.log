@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/home/shruthir/CSE180FinalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
+[0.231s] [ 33%] Built target locomotion_node
+[0.239s] [ 66%] Built target navigation_node
+[0.241s] [100%] Built target perception_node
+[0.254s] Invoked command in '/home/shruthir/CSE180FinalProject/build/finalProject' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
+[0.268s] Invoking command in '/home/shruthir/CSE180FinalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shruthir/CSE180FinalProject/build/finalProject
+[0.277s] -- Install configuration: ""
+[0.278s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/lib/finalProject/navigation_node
+[0.279s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/lib/finalProject/perception_node
+[0.279s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/lib/finalProject/locomotion_node
+[0.280s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/ament_index/resource_index/package_run_dependencies/finalProject
+[0.280s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/ament_index/resource_index/parent_prefix_path/finalProject
+[0.280s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/environment/ament_prefix_path.sh
+[0.281s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/environment/ament_prefix_path.dsv
+[0.281s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/environment/path.sh
+[0.281s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/environment/path.dsv
+[0.281s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/local_setup.bash
+[0.281s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/local_setup.sh
+[0.281s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/local_setup.zsh
+[0.281s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/local_setup.dsv
+[0.282s] -- Installing: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/package.dsv
+[0.282s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/ament_index/resource_index/packages/finalProject
+[0.282s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/cmake/finalProjectConfig.cmake
+[0.282s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/cmake/finalProjectConfig-version.cmake
+[0.282s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/package.xml
+[0.284s] Invoked command in '/home/shruthir/CSE180FinalProject/build/finalProject' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shruthir/CSE180FinalProject/build/finalProject

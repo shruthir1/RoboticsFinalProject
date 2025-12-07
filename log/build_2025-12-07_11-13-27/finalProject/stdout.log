@@ -1,0 +1,5 @@
+[ 33%] Built target locomotion_node
+[ 50%] [32mBuilding CXX object CMakeFiles/perception_node.dir/src/perception.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable perception_node[0m
+[ 83%] Built target perception_node

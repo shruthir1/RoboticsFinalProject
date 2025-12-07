@@ -1,0 +1,127 @@
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:166:39:[m[K [01;31m[Kerror: [m[K‘[01m[KGoToPose[m[K’ in namespace ‘[01m[Knav2_msgs::action[m[K’ does not name a type
+  166 |   using GoToPose = nav2_msgs::action::[01;31m[KGoToPose[m[K;
+      |                                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:167:57:[m[K [01;31m[Kerror: [m[K‘[01m[KGoToPose[m[K’ was not declared in this scope
+  167 |   using GoalHandleNav = rclcpp_action::ClientGoalHandle<[01;31m[KGoToPose[m[K>;
+      |                                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:167:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  167 |   using GoalHandleNav = rclcpp_action::ClientGoalHandle<GoToPose[01;31m[K>[m[K;
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:237:32:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleNav[m[K’ does not name a type
+  237 |   void navResultCallback(const [01;31m[KGoalHandleNav[m[K::WrappedResult &result){
+      |                                [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:237:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  237 |   void navResultCallback(const GoalHandleNav::WrappedResult [01;31m[K&[m[Kresult){
+      |                                                             [01;31m[K^[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:237:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  237 |   void navResultCallback[34m[K([m[Kconst GoalHandleNav::WrappedResult[01;31m[K [m[K[32m[K&[m[Kresult){
+      |                         [34m[K~[m[K                                  [01;31m[K^[m[K[32m[K~[m[K
+      |                                                            [32m[K)[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:237:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  237 |   void navResultCallback(const GoalHandleNav::WrappedResult [01;31m[K&[m[Kresult){
+      |                                                             [01;31m[K^[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:237:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ does not name a type
+  237 |   void navResultCallback(const GoalHandleNav::WrappedResult &[01;31m[Kresult[m[K){
+      |                                                              [01;31m[K^~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:279:25:[m[K [01;31m[Kerror: [m[K‘[01m[KGoToPose[m[K’ was not declared in this scope
+  279 |   rclcpp_action::Client<[01;31m[KGoToPose[m[K>::SharedPtr nav_client_;
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:279:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  279 |   rclcpp_action::Client<GoToPose[01;31m[K>[m[K::SharedPtr nav_client_;
+      |                                 [01;31m[K^[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:279:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  279 |   rclcpp_action::Client<GoToPose>::[01;31m[KSharedPtr[m[K nav_client_;
+      |                                    [01;31m[K^~~~~~~~~[m[K
+      |                                             [32m[K;[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:279:46:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_client_[m[K’ does not name a type; did you mean ‘[01m[Krmw_client_t[m[K’?
+  279 |   rclcpp_action::Client<GoToPose>::SharedPtr [01;31m[Knav_client_[m[K;
+      |                                              [01;31m[K^~~~~~~~~~~[m[K
+      |                                              [32m[Krmw_client_t[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In constructor ‘[01m[KNavigationNode::[01;32m[KNavigationNode[m[K()[m[K’:
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:170:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_client_t[m[K’?
+  170 |     [01;31m[Knav_client_[m[K = rclcpp_action::create_client<GoToPose>(
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Krmw_client_t[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:170:48:[m[K [01;31m[Kerror: [m[K‘[01m[KGoToPose[m[K’ was not declared in this scope
+  170 |     nav_client_ = rclcpp_action::create_client<[01;31m[KGoToPose[m[K>(
+      |                                                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:170:57:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_client<<expression error> >(NavigationNode*, const char [11])[m[K’
+  170 |     nav_client_ = [01;31m[Krclcpp_action::create_client<GoToPose>([m[K
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  171 | [01;31m[K      this, "go_to_pose")[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                                
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:38[m[K,
+                 from [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:156[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/create_client.hpp:44:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Client<ActionT>::SharedPtr rclcpp_action::[01;32m[Kcreate_client[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeGraphInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const std::string&, rclcpp::CallbackGroup::SharedPtr, const rcl_action_client_options_t&)[m[K’
+   44 | [01;36m[Kcreate_client[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/create_client.hpp:44:1:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+[01m[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/create_client.hpp:105:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Client<ActionT>::SharedPtr rclcpp_action::[01;32m[Kcreate_client[m[K(NodeT, const std::string&, rclcpp::CallbackGroup::SharedPtr, const rcl_action_client_options_t&)[m[K’
+  105 | [01;36m[Kcreate_client[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/create_client.hpp:105:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:170:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  170 |     nav_client_ = [01;31m[Krclcpp_action::create_client<GoToPose>([m[K
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  171 | [01;31m[K      this, "go_to_pose")[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K                                
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[KpatrolStep[m[K()[m[K’:
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:207:10:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_client_t[m[K’?
+  207 |     if (![01;31m[Knav_client_[m[K->wait_for_action_server(500ms)) {
+      |          [01;31m[K^~~~~~~~~~~[m[K
+      |          [32m[Krmw_client_t[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:214:5:[m[K [01;31m[Kerror: [m[K‘[01m[KGoToPose[m[K’ has not been declared
+  214 |     [01;31m[KGoToPose[m[K::Goal goal;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:215:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+  215 |     [01;31m[Kgoal[m[K.pose = waypoints_[current_wp_];
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:220:29:[m[K [01;31m[Kerror: [m[K‘[01m[KGoToPose[m[K’ was not declared in this scope
+  220 |       rclcpp_action::Client<[01;31m[KGoToPose[m[K>::SendGoalOptions();
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:220:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  220 |       rclcpp_action::Client<GoToPose[01;31m[K>[m[K::SendGoalOptions();
+      |                                     [01;31m[K^[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:232:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_client_t[m[K’?
+  232 |     [01;31m[Knav_client_[m[K->async_send_goal(goal, options);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Krmw_client_t[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[KhumansCallback[m[K(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:249:10:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_client_t[m[K’?
+  249 |     if (![01;31m[Knav_client_[m[K->wait_for_action_server(500ms)) {
+      |          [01;31m[K^~~~~~~~~~~[m[K
+      |          [32m[Krmw_client_t[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:253:5:[m[K [01;31m[Kerror: [m[K‘[01m[KGoToPose[m[K’ has not been declared
+  253 |     [01;31m[KGoToPose[m[K::Goal goal;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:254:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+  254 |     [01;31m[Kgoal[m[K.pose.header.frame_id = "map";
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:261:29:[m[K [01;31m[Kerror: [m[K‘[01m[KGoToPose[m[K’ was not declared in this scope
+  261 |       rclcpp_action::Client<[01;31m[KGoToPose[m[K>::SendGoalOptions();
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:261:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  261 |       rclcpp_action::Client<GoToPose[01;31m[K>[m[K::SendGoalOptions();
+      |                                     [01;31m[K^[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:263:20:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleNav[m[K’ does not name a type
+  263 |       [this](const [01;31m[KGoalHandleNav[m[K::WrappedResult &res){
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:268:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  268 |       }[01;31m[K;[m[K
+      |        [01;31m[K^[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:263:13:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  263 |       [this][01;36m[K([m[Kconst GoalHandleNav::WrappedResult &res){
+      |             [01;36m[K^[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In lambda function:
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:268:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+  268 |       }[01;31m[K;[m[K
+      |        [01;31m[K^[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In member function ‘[01m[Kvoid NavigationNode::[01;32m[KhumansCallback[m[K(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:271:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_client_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_client_t[m[K’?
+  271 |     [01;31m[Knav_client_[m[K->async_send_goal(goal, options);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Krmw_client_t[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/navigation_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

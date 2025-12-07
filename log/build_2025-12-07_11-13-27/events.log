@@ -1,0 +1,184 @@
+[0.000000] (-) TimerEvent: {}
+[0.000848] (finalProject) JobQueued: {'identifier': 'finalProject', 'dependencies': OrderedDict()}
+[0.001001] (finalProject) JobStarted: {'identifier': 'finalProject'}
+[0.015836] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'cmake'}
+[0.017942] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'build'}
+[0.018470] (finalProject) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shruthir/CSE180FinalProject/build/finalProject', '--', '-j12', '-l12'], 'cwd': '/home/shruthir/CSE180FinalProject/build/finalProject', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'shruthir', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/shruthir', 'OLDPWD': '/home/shruthir/CSE180FinalProject/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-7d531088-6f0e-4962-a7cd-9f85608ab2c2.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shruthir', 'NAME': 'Shruthi', 'WSL_INTEROP': '/run/WSL/367_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/shrut/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shrut/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shrut/.dotnet/tools:/mnt/c/Program Files/OpenSSL-Win64/bin:/snap/bin:/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-3cb0f3f0306d994c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/shruthir/.vscode-server/data/User/workspaceStorage/ca5834bb49b378f92ca2e45958a037b0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4b0cbc8f42.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/install/finder_program:/home/shruthir/CSE180FinalProject/install/finalProject:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/shruthir/CSE180FinalProject/build/finalProject', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/shruthir/CSE180FinalProject/install/finder_program:/home/shruthir/CSE180FinalProject/install/finalProject:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.101170] (finalProject) StdoutLine: {'line': b'[ 33%] Built target locomotion_node\n'}
+[0.101415] (-) TimerEvent: {}
+[0.105782] (finalProject) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/perception_node.dir/src/perception.cpp.o\x1b[0m\n'}
+[0.106532] (finalProject) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o\x1b[0m\n'}
+[0.201648] (-) TimerEvent: {}
+[0.302304] (-) TimerEvent: {}
+[0.402753] (-) TimerEvent: {}
+[0.447538] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:160:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knav2_msgs/action/go_to_pose.hpp: No such file or directory\n'}
+[0.447820] (finalProject) StderrLine: {'line': b'  160 | #include \x1b[01;31m\x1b[K<nav2_msgs/action/go_to_pose.hpp>\x1b[m\x1b[K\n'}
+[0.447919] (finalProject) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.448771] (finalProject) StderrLine: {'line': b'compilation terminated.\n'}
+[0.452120] (finalProject) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation.cpp.o] Error 1\n'}
+[0.452778] (finalProject) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/navigation_node.dir/all] Error 2\n'}
+[0.453011] (finalProject) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[0.502903] (-) TimerEvent: {}
+[0.603263] (-) TimerEvent: {}
+[0.706366] (-) TimerEvent: {}
+[0.806828] (-) TimerEvent: {}
+[0.907289] (-) TimerEvent: {}
+[1.007627] (-) TimerEvent: {}
+[1.108097] (-) TimerEvent: {}
+[1.208700] (-) TimerEvent: {}
+[1.309099] (-) TimerEvent: {}
+[1.409524] (-) TimerEvent: {}
+[1.510415] (-) TimerEvent: {}
+[1.610880] (-) TimerEvent: {}
+[1.711500] (-) TimerEvent: {}
+[1.811983] (-) TimerEvent: {}
+[1.912575] (-) TimerEvent: {}
+[2.015031] (-) TimerEvent: {}
+[2.115446] (-) TimerEvent: {}
+[2.215787] (-) TimerEvent: {}
+[2.316200] (-) TimerEvent: {}
+[2.417339] (-) TimerEvent: {}
+[2.517827] (-) TimerEvent: {}
+[2.618321] (-) TimerEvent: {}
+[2.718828] (-) TimerEvent: {}
+[2.819298] (-) TimerEvent: {}
+[2.919832] (-) TimerEvent: {}
+[3.020348] (-) TimerEvent: {}
+[3.121852] (-) TimerEvent: {}
+[3.222443] (-) TimerEvent: {}
+[3.322978] (-) TimerEvent: {}
+[3.423537] (-) TimerEvent: {}
+[3.523965] (-) TimerEvent: {}
+[3.624576] (-) TimerEvent: {}
+[3.729084] (-) TimerEvent: {}
+[3.829662] (-) TimerEvent: {}
+[3.930021] (-) TimerEvent: {}
+[4.030472] (-) TimerEvent: {}
+[4.131700] (-) TimerEvent: {}
+[4.232239] (-) TimerEvent: {}
+[4.332728] (-) TimerEvent: {}
+[4.433148] (-) TimerEvent: {}
+[4.533704] (-) TimerEvent: {}
+[4.634244] (-) TimerEvent: {}
+[4.734721] (-) TimerEvent: {}
+[4.835256] (-) TimerEvent: {}
+[4.935739] (-) TimerEvent: {}
+[5.037061] (-) TimerEvent: {}
+[5.137606] (-) TimerEvent: {}
+[5.238045] (-) TimerEvent: {}
+[5.338500] (-) TimerEvent: {}
+[5.438951] (-) TimerEvent: {}
+[5.541092] (-) TimerEvent: {}
+[5.641824] (-) TimerEvent: {}
+[5.742127] (-) TimerEvent: {}
+[5.842497] (-) TimerEvent: {}
+[5.943014] (-) TimerEvent: {}
+[6.043420] (-) TimerEvent: {}
+[6.143854] (-) TimerEvent: {}
+[6.244472] (-) TimerEvent: {}
+[6.345104] (-) TimerEvent: {}
+[6.445617] (-) TimerEvent: {}
+[6.546028] (-) TimerEvent: {}
+[6.646488] (-) TimerEvent: {}
+[6.747167] (-) TimerEvent: {}
+[6.850101] (-) TimerEvent: {}
+[6.950661] (-) TimerEvent: {}
+[7.051243] (-) TimerEvent: {}
+[7.153158] (-) TimerEvent: {}
+[7.254385] (-) TimerEvent: {}
+[7.354869] (-) TimerEvent: {}
+[7.455327] (-) TimerEvent: {}
+[7.555674] (-) TimerEvent: {}
+[7.656106] (-) TimerEvent: {}
+[7.756529] (-) TimerEvent: {}
+[7.857050] (-) TimerEvent: {}
+[7.957650] (-) TimerEvent: {}
+[8.058213] (-) TimerEvent: {}
+[8.158893] (-) TimerEvent: {}
+[8.259415] (-) TimerEvent: {}
+[8.360408] (-) TimerEvent: {}
+[8.460976] (-) TimerEvent: {}
+[8.561428] (-) TimerEvent: {}
+[8.661850] (-) TimerEvent: {}
+[8.762292] (-) TimerEvent: {}
+[8.862933] (-) TimerEvent: {}
+[8.963400] (-) TimerEvent: {}
+[9.066730] (-) TimerEvent: {}
+[9.169244] (-) TimerEvent: {}
+[9.269984] (-) TimerEvent: {}
+[9.370502] (-) TimerEvent: {}
+[9.471737] (-) TimerEvent: {}
+[9.572755] (-) TimerEvent: {}
+[9.674062] (-) TimerEvent: {}
+[9.777017] (-) TimerEvent: {}
+[9.877599] (-) TimerEvent: {}
+[9.978120] (-) TimerEvent: {}
+[10.078786] (-) TimerEvent: {}
+[10.179368] (-) TimerEvent: {}
+[10.279882] (-) TimerEvent: {}
+[10.380278] (-) TimerEvent: {}
+[10.480994] (-) TimerEvent: {}
+[10.581426] (-) TimerEvent: {}
+[10.682019] (-) TimerEvent: {}
+[10.782961] (-) TimerEvent: {}
+[10.883599] (-) TimerEvent: {}
+[10.984172] (-) TimerEvent: {}
+[11.084710] (-) TimerEvent: {}
+[11.185329] (-) TimerEvent: {}
+[11.285902] (-) TimerEvent: {}
+[11.386333] (-) TimerEvent: {}
+[11.486770] (-) TimerEvent: {}
+[11.587386] (-) TimerEvent: {}
+[11.688018] (-) TimerEvent: {}
+[11.788537] (-) TimerEvent: {}
+[11.889010] (-) TimerEvent: {}
+[11.989649] (-) TimerEvent: {}
+[12.090076] (-) TimerEvent: {}
+[12.191687] (-) TimerEvent: {}
+[12.292377] (-) TimerEvent: {}
+[12.392890] (-) TimerEvent: {}
+[12.493558] (-) TimerEvent: {}
+[12.594119] (-) TimerEvent: {}
+[12.697233] (-) TimerEvent: {}
+[12.797578] (-) TimerEvent: {}
+[12.898071] (-) TimerEvent: {}
+[12.998495] (-) TimerEvent: {}
+[13.098872] (-) TimerEvent: {}
+[13.199197] (-) TimerEvent: {}
+[13.299630] (-) TimerEvent: {}
+[13.400072] (-) TimerEvent: {}
+[13.501066] (-) TimerEvent: {}
+[13.601495] (-) TimerEvent: {}
+[13.702070] (-) TimerEvent: {}
+[13.802626] (-) TimerEvent: {}
+[13.903024] (-) TimerEvent: {}
+[14.003484] (-) TimerEvent: {}
+[14.103950] (-) TimerEvent: {}
+[14.204839] (-) TimerEvent: {}
+[14.305200] (-) TimerEvent: {}
+[14.405583] (-) TimerEvent: {}
+[14.506053] (-) TimerEvent: {}
+[14.606563] (-) TimerEvent: {}
+[14.707049] (-) TimerEvent: {}
+[14.807523] (-) TimerEvent: {}
+[14.908062] (-) TimerEvent: {}
+[15.008353] (-) TimerEvent: {}
+[15.108743] (-) TimerEvent: {}
+[15.209287] (-) TimerEvent: {}
+[15.309760] (-) TimerEvent: {}
+[15.410152] (-) TimerEvent: {}
+[15.510626] (-) TimerEvent: {}
+[15.555876] (finalProject) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable perception_node\x1b[0m\n'}
+[15.611715] (-) TimerEvent: {}
+[15.712210] (-) TimerEvent: {}
+[15.812659] (-) TimerEvent: {}
+[15.913103] (-) TimerEvent: {}
+[16.013643] (-) TimerEvent: {}
+[16.114087] (-) TimerEvent: {}
+[16.214698] (-) TimerEvent: {}
+[16.315338] (-) TimerEvent: {}
+[16.331147] (finalProject) StdoutLine: {'line': b'[ 83%] Built target perception_node\n'}
+[16.333644] (finalProject) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.343633] (finalProject) CommandEnded: {'returncode': 2}
+[16.375121] (finalProject) JobEnded: {'identifier': 'finalProject', 'rc': 2}
+[16.385964] (-) EventReactorShutdown: {}
