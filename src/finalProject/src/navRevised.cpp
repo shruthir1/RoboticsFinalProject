@@ -2,8 +2,7 @@
 //need to find the proper way to include his nav2 library -> need to look into this, makes stuff a bunch easier 
 #include <nav.hpp>
 #include <iostream>
-//make an array of all x and y coordinates, use for loop for exery x all y's and for every y all x's in this for loop we call the waypoints function. 
-//Use if statements if above or below max/min values, handle accordingly 
+//a lot of the current code placing might need clean up 
 class NavigationNode : public rclcpp::Node
 {
 public:
@@ -72,6 +71,7 @@ private:
   //this function needs to go in spin 
   void callback(){
     if(!humanFound){
+        //this lowkey might be really inefficient, i think it mught be a good way to figure out and implement not making a wapoint that navigates to an obstacle
       for (int i = 0; i < 30, i++){
         for(int j = 0, j < 63, j++){
          newWaypoints(allX[i], allY[j]);
