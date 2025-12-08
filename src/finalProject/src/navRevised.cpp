@@ -42,8 +42,14 @@ int main(int argc,char **argv) {
     //max Y coorindates are -38 to 24
     //max X coordinates are 
 
-    //spin at original human positions and around these coordinates: 
-    
+    //spin at original human positions
+    //if(humanFound){
+      //int humanX = 
+      //int humanY = 
+      //if(humanCount != 2){
+          //humanFound = false;
+  //}
+      
     geometry_msgs::msg::Pose::SharedPtr goal_pos = std::make_shared<geometry_msgs::msg::Pose>();
     if(/*if reached a maximum/minimum X or Y*/){
          goal_pos->position.x = x;
