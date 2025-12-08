@@ -1,0 +1,160 @@
+[0.000000] (-) TimerEvent: {}
+[0.000182] (finalProject) JobQueued: {'identifier': 'finalProject', 'dependencies': OrderedDict()}
+[0.000229] (finalProject) JobStarted: {'identifier': 'finalProject'}
+[0.008689] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'cmake'}
+[0.009034] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'build'}
+[0.010274] (finalProject) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shruthir/CSE180FinalProject/build/finalProject', '--', '-j12', '-l12'], 'cwd': '/home/shruthir/CSE180FinalProject/build/finalProject', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'shruthir', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/shruthir', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-9663de35-8e46-4530-bdfd-01466abb9943.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shruthir', 'NAME': 'Shruthi', 'WSL_INTEROP': '/run/WSL/365_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/shrut/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shrut/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shrut/.dotnet/tools:/mnt/c/Program Files/OpenSSL-Win64/bin:/snap/bin:/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-3cb0f3f0306d994c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/shruthir/.vscode-server/data/User/workspaceStorage/ca5834bb49b378f92ca2e45958a037b0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4b0cbc8f42.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/shruthir/CSE180FinalProject/build/finalProject', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.065571] (finalProject) StdoutLine: {'line': b'[ 33%] Built target perception_node\n'}
+[0.067109] (finalProject) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o\x1b[0m\n'}
+[0.074483] (finalProject) StdoutLine: {'line': b'[ 83%] Built target locomotion_node\n'}
+[0.099207] (-) TimerEvent: {}
+[0.199511] (-) TimerEvent: {}
+[0.299889] (-) TimerEvent: {}
+[0.400486] (-) TimerEvent: {}
+[0.501114] (-) TimerEvent: {}
+[0.601598] (-) TimerEvent: {}
+[0.702017] (-) TimerEvent: {}
+[0.802512] (-) TimerEvent: {}
+[0.902915] (-) TimerEvent: {}
+[1.003230] (-) TimerEvent: {}
+[1.103569] (-) TimerEvent: {}
+[1.203897] (-) TimerEvent: {}
+[1.304230] (-) TimerEvent: {}
+[1.404560] (-) TimerEvent: {}
+[1.504933] (-) TimerEvent: {}
+[1.605307] (-) TimerEvent: {}
+[1.705864] (-) TimerEvent: {}
+[1.806385] (-) TimerEvent: {}
+[1.906744] (-) TimerEvent: {}
+[2.007220] (-) TimerEvent: {}
+[2.107638] (-) TimerEvent: {}
+[2.208119] (-) TimerEvent: {}
+[2.308612] (-) TimerEvent: {}
+[2.408939] (-) TimerEvent: {}
+[2.509718] (-) TimerEvent: {}
+[2.610417] (-) TimerEvent: {}
+[2.710888] (-) TimerEvent: {}
+[2.811313] (-) TimerEvent: {}
+[2.857192] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:25:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav2_msgs\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.857760] (finalProject) StderrLine: {'line': b'   25 |   using LoadingMap = rclcpp_action::\x1b[01;31m\x1b[Knav2_msgs\x1b[m\x1b[K::::OccupancyGrid\n'}
+[2.857838] (finalProject) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.862286] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:133:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGoalHandleNav\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KGoalHandleNavigate\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.862497] (finalProject) StderrLine: {'line': b'  133 |   void navResultCallback(const \x1b[01;31m\x1b[KGoalHandleNav\x1b[m\x1b[K::WrappedResult &result){\n'}
+[2.862558] (finalProject) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.862611] (finalProject) StderrLine: {'line': b'      |                                \x1b[32m\x1b[KGoalHandleNavigate\x1b[m\x1b[K\n'}
+[2.862693] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:133:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.862762] (finalProject) StderrLine: {'line': b'  133 |   void navResultCallback(const GoalHandleNav::WrappedResult \x1b[01;31m\x1b[K&\x1b[m\x1b[Kresult){\n'}
+[2.862830] (finalProject) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.862882] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:133:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.862933] (finalProject) StderrLine: {'line': b'  133 |   void navResultCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst GoalHandleNav::WrappedResult\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Kresult){\n'}
+[2.862982] (finalProject) StderrLine: {'line': b'      |                         \x1b[34m\x1b[K~\x1b[m\x1b[K                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.863029] (finalProject) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.863333] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:133:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.863591] (finalProject) StderrLine: {'line': b'  133 |   void navResultCallback(const GoalHandleNav::WrappedResult \x1b[01;31m\x1b[K&\x1b[m\x1b[Kresult){\n'}
+[2.863751] (finalProject) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.863884] (finalProject) StderrLine: {'line': b'      |                                                              \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.865188] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:133:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.865351] (finalProject) StderrLine: {'line': b'  133 |   void navResultCallback(const GoalHandleNav::WrappedResult &\x1b[01;31m\x1b[Kresult\x1b[m\x1b[K){\n'}
+[2.865417] (finalProject) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.866724] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:179:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNavigateToPose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs::action::NavigateToPose\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.867001] (finalProject) StderrLine: {'line': b'  179 |   rclcpp_action::Client<\x1b[01;31m\x1b[KNavigateToPose\x1b[m\x1b[K>::SharedPtr nav_client_;\n'}
+[2.867064] (finalProject) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.867116] (finalProject) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Knav2_msgs::action::NavigateToPose\x1b[m\x1b[K\n'}
+[2.867169] (finalProject) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp:7\x1b[m\x1b[K,\n'}
+[2.867217] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:9\x1b[m\x1b[K:\n'}
+[2.867265] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1435:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav2_msgs::action::NavigateToPose\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.867326] (finalProject) StderrLine: {'line': b' 1435 | typedef struct NavigateToPose \x1b[01;36m\x1b[KNavigateToPose\x1b[m\x1b[K;\n'}
+[2.867371] (finalProject) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.867417] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:179:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.867463] (finalProject) StderrLine: {'line': b'  179 |   rclcpp_action::Client<NavigateToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr nav_client_;\n'}
+[2.867520] (finalProject) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.867571] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:179:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.867624] (finalProject) StderrLine: {'line': b'  179 |   rclcpp_action::Client<NavigateToPose>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K nav_client_;\n'}
+[2.867672] (finalProject) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.867733] (finalProject) StderrLine: {'line': b'      |                                                   \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.868960] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:179:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_client_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_client_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.869208] (finalProject) StderrLine: {'line': b'  179 |   rclcpp_action::Client<NavigateToPose>::SharedPtr \x1b[01;31m\x1b[Knav_client_\x1b[m\x1b[K;\n'}
+[2.869419] (finalProject) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.869587] (finalProject) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[Krmw_client_t\x1b[m\x1b[K\n'}
+[2.902277] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NavigationNode::\x1b[01;32m\x1b[KpatrolStep\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.902759] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:93:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_client_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_client_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.902846] (finalProject) StderrLine: {'line': b'   93 |     if (!\x1b[01;31m\x1b[Knav_client_\x1b[m\x1b[K->wait_for_action_server(500ms)) {\n'}
+[2.902915] (finalProject) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.902965] (finalProject) StderrLine: {'line': b'      |          \x1b[32m\x1b[Krmw_client_t\x1b[m\x1b[K\n'}
+[2.903365] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:109:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGoToPose\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.903679] (finalProject) StderrLine: {'line': b'  109 |     \x1b[01;31m\x1b[KGoToPose\x1b[m\x1b[K::Goal goal;\n'}
+[2.903826] (finalProject) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.909489] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:110:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.909677] (finalProject) StderrLine: {'line': b'  110 |     \x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K.pose = goal_pose;\n'}
+[2.909738] (finalProject) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.911428] (-) TimerEvent: {}
+[2.916679] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:120:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGoToPose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.916998] (finalProject) StderrLine: {'line': b'  120 |     auto options = rclcpp_action::Client<\x1b[01;31m\x1b[KGoToPose\x1b[m\x1b[K>::SendGoalOptions();\n'}
+[2.917063] (finalProject) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.917152] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:120:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.917208] (finalProject) StderrLine: {'line': b'  120 |     auto options = rclcpp_action::Client<GoToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SendGoalOptions();\n'}
+[2.917258] (finalProject) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.930076] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:126:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_client_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_client_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.930291] (finalProject) StderrLine: {'line': b'  126 |     \x1b[01;31m\x1b[Knav_client_\x1b[m\x1b[K->async_send_goal(goal, options);\n'}
+[2.930377] (finalProject) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.930432] (finalProject) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_client_t\x1b[m\x1b[K\n'}
+[2.940535] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NavigationNode::\x1b[01;32m\x1b[KhumansCallback\x1b[m\x1b[K(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.940807] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:147:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_client_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_client_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.940932] (finalProject) StderrLine: {'line': b'  147 |     if (!\x1b[01;31m\x1b[Knav_client_\x1b[m\x1b[K->wait_for_action_server(500ms)) {\n'}
+[2.940991] (finalProject) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.941043] (finalProject) StderrLine: {'line': b'      |          \x1b[32m\x1b[Krmw_client_t\x1b[m\x1b[K\n'}
+[2.941259] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:158:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNavigateToPose\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.941524] (finalProject) StderrLine: {'line': b'  158 |     \x1b[01;31m\x1b[KNavigateToPose\x1b[m\x1b[K::Goal goal;\n'}
+[2.941594] (finalProject) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.947051] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:159:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.947282] (finalProject) StderrLine: {'line': b'  159 |     \x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K.pose = target;\n'}
+[2.947340] (finalProject) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.948261] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:166:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNavigateToPose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Knav2_msgs::action::NavigateToPose\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.948662] (finalProject) StderrLine: {'line': b'  166 |     auto options = rclcpp_action::Client<\x1b[01;31m\x1b[KNavigateToPose\x1b[m\x1b[K>::SendGoalOptions();\n'}
+[2.948815] (finalProject) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.948952] (finalProject) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[Knav2_msgs::action::NavigateToPose\x1b[m\x1b[K\n'}
+[2.949088] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp:1435:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav2_msgs::action::NavigateToPose\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.949223] (finalProject) StderrLine: {'line': b' 1435 | typedef struct NavigateToPose \x1b[01;36m\x1b[KNavigateToPose\x1b[m\x1b[K;\n'}
+[2.949352] (finalProject) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.949480] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:166:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.949607] (finalProject) StderrLine: {'line': b'  166 |     auto options = rclcpp_action::Client<NavigateToPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SendGoalOptions();\n'}
+[2.949830] (finalProject) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.950500] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:167:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGoalHandleNav\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KGoalHandleNavigate\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.950690] (finalProject) StderrLine: {'line': b'  167 |     options.result_callback = [this](const \x1b[01;31m\x1b[KGoalHandleNav\x1b[m\x1b[K::WrappedResult &res){\n'}
+[2.950748] (finalProject) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.950795] (finalProject) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[KGoalHandleNavigate\x1b[m\x1b[K\n'}
+[2.950845] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:173:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.950896] (finalProject) StderrLine: {'line': b'  173 |       }\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.950943] (finalProject) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.950989] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.951050] (finalProject) StderrLine: {'line': b'  167 |     options.result_callback = [this]\x1b[01;36m\x1b[K(\x1b[m\x1b[Kconst GoalHandleNav::WrappedResult &res){\n'}
+[2.951098] (finalProject) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.951144] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[2.951188] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:173:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.951233] (finalProject) StderrLine: {'line': b'  173 |       }\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.951278] (finalProject) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.957325] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NavigationNode::\x1b[01;32m\x1b[KhumansCallback\x1b[m\x1b[K(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.957481] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:176:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_client_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_client_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.957548] (finalProject) StderrLine: {'line': b'  176 |     \x1b[01;31m\x1b[Knav_client_\x1b[m\x1b[K->async_send_goal(goal, options);\n'}
+[2.957597] (finalProject) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.957644] (finalProject) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_client_t\x1b[m\x1b[K\n'}
+[2.962685] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.962965] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:190:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knodeh\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.963028] (finalProject) StderrLine: {'line': b'  190 |   rclcpp::spin(\x1b[01;31m\x1b[Knodeh\x1b[m\x1b[K);\n'}
+[2.963080] (finalProject) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.011551] (-) TimerEvent: {}
+[3.112099] (-) TimerEvent: {}
+[3.212666] (-) TimerEvent: {}
+[3.313121] (-) TimerEvent: {}
+[3.413817] (-) TimerEvent: {}
+[3.514756] (-) TimerEvent: {}
+[3.615159] (-) TimerEvent: {}
+[3.715647] (-) TimerEvent: {}
+[3.816161] (-) TimerEvent: {}
+[3.916548] (-) TimerEvent: {}
+[3.938052] (finalProject) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation.cpp.o] Error 1\n'}
+[3.938665] (finalProject) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/navigation_node.dir/all] Error 2\n'}
+[3.938748] (finalProject) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.944960] (finalProject) CommandEnded: {'returncode': 2}
+[3.963170] (finalProject) JobEnded: {'identifier': 'finalProject', 'rc': 2}
+[3.975829] (-) EventReactorShutdown: {}

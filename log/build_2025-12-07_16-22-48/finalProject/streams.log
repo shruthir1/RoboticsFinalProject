@@ -1,0 +1,12 @@
+[0.013s] Invoking command in '/home/shruthir/CSE180FinalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
+[0.084s] [ 33%] Built target perception_node
+[0.090s] [ 66%] Built target locomotion_node
+[0.093s] [ 83%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o[0m
+[0.306s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:12:10:[m[K [01;31m[Kfatal error: [m[KCSE180FinalProject/src/finalProject/src/nav.hpp: No such file or directory
+[0.306s]    12 | #include [01;31m[K<CSE180FinalProject/src/finalProject/src/nav.hpp>[m[K
+[0.306s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.306s] compilation terminated.
+[0.311s] gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation.cpp.o] Error 1
+[0.312s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/navigation_node.dir/all] Error 2
+[0.312s] gmake: *** [Makefile:146: all] Error 2
+[0.315s] Invoked command in '/home/shruthir/CSE180FinalProject/build/finalProject' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12

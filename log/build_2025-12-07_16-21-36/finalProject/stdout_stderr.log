@@ -1,0 +1,10 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o[0m
+[ 50%] Built target locomotion_node
+[ 83%] Built target perception_node
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:12:10:[m[K [01;31m[Kfatal error: [m[KfinalProject/src/nav.hpp: No such file or directory
+   12 | #include [01;31m[K<finalProject/src/nav.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/navigation_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -79,12 +79,28 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__builder.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__struct.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__traits.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__type_support.hpp \
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__builder.hpp \
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp \
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__traits.hpp \
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__type_support.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/follow_path.hpp \
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp \
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/load_map__builder.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/load_map__struct.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/load_map__traits.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/load_map__type_support.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/load_map.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__traits.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__traits.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
   /opt/ros/jazzy/include/rcl/rcl/allocator.h \
   /opt/ros/jazzy/include/rcl/rcl/arguments.h \
   /opt/ros/jazzy/include/rcl/rcl/client.h \
@@ -469,6 +485,8 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp \
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
   /opt/ros/jazzy/include/tracetools/tracetools/config.h \
@@ -1181,8 +1199,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /usr/include/c++/13/bits/stl_numeric.h:
 
-/usr/include/c++/13/bits/stl_multimap.h:
-
 /usr/include/c++/13/debug/debug.h:
 
 /usr/include/c++/13/bits/stl_list.h:
@@ -1217,8 +1233,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
-/usr/include/c++/13/bits/refwrap.h:
-
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/bits/quoted_string.h:
@@ -1237,21 +1251,39 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /usr/include/c++/13/bits/node_handle.h:
 
-/usr/include/c++/13/bits/new_allocator.h:
-
 /usr/include/c++/13/bits/move.h:
 
 /usr/include/c++/13/bits/memoryfwd.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:
+/usr/include/c++/13/bits/localefwd.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
+/usr/include/c++/13/bits/locale_facets_nonio.h:
 
-/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/create_client.hpp:
+/usr/include/c++/13/bits/locale_facets.tcc:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
+/usr/include/c++/13/bits/locale_facets.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
+/usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/13/type_traits:
+
+/usr/include/c++/13/bits/list.tcc:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/c++/13/bits/hashtable.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/c++/13/bits/functexcept.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
 
@@ -1265,17 +1297,15 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
-
-/opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
-
 /usr/include/c++/13/ostream:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/create_client.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:
 
@@ -1303,9 +1333,9 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
-/opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_info.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_notify_waitable.hpp:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_info.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -1331,19 +1361,15 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_publisher.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
-
-/usr/include/c++/13/bits/atomic_futex.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
@@ -1358,6 +1384,12 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /usr/include/c++/13/ext/string_conversions.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/array_list.h:
 
@@ -1384,8 +1416,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
 
 /usr/include/c++/13/bits/unordered_map.h:
 
@@ -1425,6 +1455,10 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
+/usr/include/c++/13/bits/locale_facets_nonio.tcc:
+
+/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/exceptions.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -1435,15 +1469,9 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_result.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -1456,8 +1484,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/arguments.h:
-
-/usr/include/c++/13/bits/basic_string.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
 
@@ -1472,6 +1498,44 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__struct.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/usr/include/c++/13/cctype:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/node_options.h:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
+
+/opt/ros/jazzy/include/rcl_action/rcl_action/visibility_control.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
@@ -1491,35 +1555,11 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
 
-/usr/include/c++/13/cstddef:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/opt/ros/jazzy/include/rmw/rmw/impl/config.h:
-
-/usr/include/c++/13/bits/ios_base.h:
-
 /usr/include/c++/13/bits/exception_defines.h:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
-
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
-
-/usr/include/pthread.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
-
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -1535,7 +1575,13 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
+
+/opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_subscription.hpp:
 
@@ -1549,6 +1595,10 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
+
 /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp:
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.h:
@@ -1556,6 +1606,20 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_timer.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_action/rcl_action/goal_state_machine.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -1566,10 +1630,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_base.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_options.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
 
 /usr/include/c++/13/initializer_list:
 
@@ -1645,19 +1705,23 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
 
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/13/bits/this_thread_sleep.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
 /usr/include/c++/13/bits/stl_multiset.h:
 
 /opt/ros/jazzy/include/rmw/rmw/init_options.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/init_options.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/event.h:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
@@ -1671,10 +1735,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl/rcl/wait.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
-
 /usr/include/c++/13/csignal:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
@@ -1685,27 +1745,35 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl/rcl/node.h:
 
-/usr/include/c++/13/cctype:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
-
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:
 
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
+
 /opt/ros/jazzy/include/rcl/rcl/time.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
 
+/usr/include/c++/13/cstddef:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/follow_path.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/event.h:
+
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:
+
+/opt/ros/jazzy/include/rcpputils/rcpputils/visibility_control.hpp:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
 
@@ -1719,22 +1787,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_info.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/event_callback_type.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/node_options.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
-
-/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/visibility_control.hpp:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
-
 /usr/include/c++/13/optional:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
@@ -1743,21 +1795,9 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/13/bits/this_thread_sleep.h:
-
-/opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_status.h:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/graph.h:
 
@@ -1779,6 +1819,8 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__traits.hpp:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status__type_support.hpp:
@@ -1795,27 +1837,9 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
 
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/opt/ros/jazzy/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
-
 /usr/include/c++/13/iostream:
 
 /usr/include/asm-generic/errno.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/future_return_code.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:
-
-/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/types.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /usr/include/stdc-predef.h:
 
@@ -1839,7 +1863,41 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl/rcl/macros.h:
 
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/future_return_code.hpp:
+
+/opt/ros/jazzy/include/rcutils/rcutils/types.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.h:
+
+/opt/ros/jazzy/include/rcl/rcl/context.h:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__traits.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/error_handling.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_action/rcl_action/action_client.h:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_template.hpp:
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:
 
@@ -1859,6 +1917,8 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/load_map.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
@@ -1871,6 +1931,26 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__type_support.hpp:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/opt/ros/jazzy/include/rcl_action/rcl_action/types.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__struct.hpp:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp:
+
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status__functions.h:
 
 /opt/ros/jazzy/include/rmw/rmw/discovery_options.h:
@@ -1879,17 +1959,51 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.h:
 
-/opt/ros/jazzy/include/rcl/rcl/context.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/opt/ros/jazzy/include/rcl/rcl/publisher.h:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_changed.h:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/load_map__struct.hpp:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/load_map__traits.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/opt/ros/jazzy/include/rcl/rcl/logging_rosout.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_result.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:
 
+/usr/include/c++/13/bits/refwrap.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp:
+
+/usr/include/asm-generic/errno-base.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__traits.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp:
+
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
+
 /opt/ros/jazzy/include/rcl/rcl/allocator.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
 
@@ -1909,38 +2023,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl/rcl/domain_id.h:
 
-/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/timers_manager.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/error_handling.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_action/rcl_action/action_client.h:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/opt/ros/jazzy/include/rcl/rcl/logging_rosout.h:
-
-/usr/include/c++/13/bits/stl_tree.h:
-
-/opt/ros/jazzy/include/rcl/rcl/publisher.h:
-
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_changed.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
-
 /usr/include/stdint.h:
 
 /opt/ros/jazzy/include/rcl/rcl/subscription.h:
@@ -1951,41 +2033,61 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
 
-/opt/ros/jazzy/include/rcl_action/rcl_action/goal_state_machine.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
 
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h:
+/usr/include/pthread.h:
 
-/usr/include/c++/13/pstl/execution_defs.h:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp:
 
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
 
-/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
 
-/usr/include/c++/13/bits/chrono.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 
-/opt/ros/jazzy/include/rcl_action/rcl_action/types.h:
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+/opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
-/opt/ros/jazzy/include/rcl_action/rcl_action/visibility_control.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+/opt/ros/jazzy/include/rmw/rmw/impl/config.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/timers_manager.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/c++/13/bits/erase_if.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_publisher.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/event_callback_type.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:
+
+/usr/include/c++/13/bits/atomic_futex.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__builder.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/init_options.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
@@ -2007,19 +2109,15 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_memory_strategy.hpp:
 
-/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/exceptions.hpp:
-
-/usr/include/c++/13/bits/locale_facets_nonio.tcc:
-
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/action_type_support.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type.hpp:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
@@ -2028,14 +2126,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /opt/ros/jazzy/include/rclcpp/rclcpp/visibility_control.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
-
-/usr/include/c++/13/bits/locale_conv.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
 
@@ -2071,9 +2161,9 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp:
 
-/opt/ros/jazzy/include/rmw/rmw/qos_string_conversions.h:
-
 /usr/include/c++/13/bits/basic_ios.h:
+
+/opt/ros/jazzy/include/rmw/rmw/qos_string_conversions.h:
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
@@ -2131,11 +2221,17 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /usr/include/string.h:
 
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/load_map__type_support.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/serialized_message.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/service.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/get_topic_names_and_types.h:
+
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+
+/usr/include/c++/13/backward/auto_ptr.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
@@ -2185,12 +2281,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_template.hpp:
-
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/waitable.hpp:
@@ -2220,8 +2310,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/rosidl_generator_c__visibility_control.h:
 
 /opt/ros/jazzy/include/rclcpp_action/rclcpp_action/visibility_control.hpp:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/event_handler.hpp:
 
@@ -2409,10 +2497,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h:
 
-/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
@@ -2420,8 +2504,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
-
-/usr/include/c++/13/bits/hashtable.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
@@ -2435,23 +2517,17 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:
 
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
-
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_publisher.hpp:
-
-/usr/include/c++/13/bits/erase_if.h:
 
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/alloca.h:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
@@ -2479,6 +2555,8 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/individual_type_description__struct.h:
 
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/load_map__builder.hpp:
+
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/key_value__struct.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_factory.hpp:
@@ -2490,8 +2568,6 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__functions.h:
 
 /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp:
-
-/usr/include/asm-generic/errno-base.h:
 
 /usr/include/assert.h:
 
@@ -2524,25 +2600,3 @@ CMakeFiles/navigation_node.dir/src/navigation.cpp.o: /home/shruthir/CSE180FinalP
 /usr/include/c++/13/bits/enable_special_members.h:
 
 /usr/include/c++/13/bits/exception.h:
-
-/usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/13/type_traits:
-
-/usr/include/c++/13/bits/list.tcc:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/c++/13/bits/locale_facets_nonio.h:
-
-/usr/include/c++/13/bits/localefwd.h:

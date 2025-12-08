@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.000417] (finalProject) JobQueued: {'identifier': 'finalProject', 'dependencies': OrderedDict()}
+[0.000474] (finalProject) JobStarted: {'identifier': 'finalProject'}
+[0.020150] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'cmake'}
+[0.021681] (finalProject) JobProgress: {'identifier': 'finalProject', 'progress': 'build'}
+[0.022548] (finalProject) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shruthir/CSE180FinalProject/build/finalProject', '--', '-j12', '-l12'], 'cwd': '/home/shruthir/CSE180FinalProject/build/finalProject', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'shruthir', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/shruthir', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-9663de35-8e46-4530-bdfd-01466abb9943.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'shruthir', 'NAME': 'Shruthi', 'WSL_INTEROP': '/run/WSL/365_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/shruthir/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/shrut/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shrut/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/shrut/.dotnet/tools:/mnt/c/Program Files/OpenSSL-Win64/bin:/snap/bin:/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/shruthir/.vscode-server/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-3cb0f3f0306d994c.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/shruthir/.vscode-server/data/User/workspaceStorage/ca5834bb49b378f92ca2e45958a037b0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4b0cbc8f42.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/shruthir/CSE180FinalProject/build/finalProject', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.099048] (-) TimerEvent: {}
+[0.165741] (finalProject) StdoutLine: {'line': b'[ 33%] Built target locomotion_node\n'}
+[0.168623] (finalProject) StdoutLine: {'line': b'[ 66%] Built target perception_node\n'}
+[0.173431] (finalProject) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o\x1b[0m\n'}
+[0.199310] (-) TimerEvent: {}
+[0.299712] (-) TimerEvent: {}
+[0.400042] (-) TimerEvent: {}
+[0.500446] (-) TimerEvent: {}
+[0.601064] (-) TimerEvent: {}
+[0.701658] (-) TimerEvent: {}
+[0.752754] (finalProject) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.753563] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.753718] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.753854] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.753988] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754122] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754349] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754433] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754486] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754534] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754581] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754768] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754846] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754899] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754948] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.754997] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755045] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755145] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755202] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755255] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755305] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755353] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755400] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755446] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755501] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755547] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755597] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755694] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755746] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755794] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755843] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755891] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755937] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.755987] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756032] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756078] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756125] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756217] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756270] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756322] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756371] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756418] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756466] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756511] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756556] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756601] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756646] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756741] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756797] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756849] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756898] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756944] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.756993] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757040] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757088] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757133] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757178] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757253] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757304] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757353] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757402] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757449] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757497] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757543] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757617] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757677] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757728] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757777] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757821] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757869] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757919] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.757964] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758010] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758058] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758103] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758148] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758221] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758276] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758327] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758373] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758423] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758471] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758516] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758561] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758605] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758649] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758695] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758740] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758784] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758830] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758874] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.758918] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759020] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759110] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759205] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759291] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759546] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759616] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759734] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759829] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.759924] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.760019] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.760356] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.760505] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.760632] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.760759] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.760932] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.761069] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.761178] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.761258] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.761424] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.761618] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.761745] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.761926] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.762013] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.762109] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.762172] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.762391] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.762623] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.762823] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763062] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763153] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763299] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763376] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763426] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763505] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763619] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763706] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.763938] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.764142] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.764254] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.764450] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.764662] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.764765] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.764863] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.765084] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.765754] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.765925] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.766066] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.766193] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.766371] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.768037] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.768208] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.768359] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.768489] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.768616] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.768749] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.768876] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.769003] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.769330] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.769507] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.769797] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.770085] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.770281] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.770416] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.770613] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.771052] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.771163] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.771421] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.771536] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.771707] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.771808] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.771860] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.771925] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772141] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772216] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772305] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772513] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772620] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772737] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772841] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772891] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772939] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.772986] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773034] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773078] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773124] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773170] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773214] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773259] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773304] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773348] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773392] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773484] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773644] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.773880] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.774633] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.774944] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.775099] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.775322] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.775423] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.775522] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.775582] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.775679] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.775778] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.775961] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.776056] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.776154] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18\x1b[m\x1b[K,\n'}
+[0.776582] (finalProject) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:12\x1b[m\x1b[K:\n'}
+[0.776648] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:17:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K#include nested depth 200 exceeds maximum of 200 (use -fmax-include-depth=DEPTH to increase the maximum)\n'}
+[0.776699] (finalProject) StderrLine: {'line': b'   17 | #include <rclcpp/rclcpp.hpp>\n'}
+[0.776752] (finalProject) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.776797] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:18:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K#include nested depth 200 exceeds maximum of 200 (use -fmax-include-depth=DEPTH to increase the maximum)\n'}
+[0.776844] (finalProject) StderrLine: {'line': b'   18 | #include </home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp>\n'}
+[0.776887] (finalProject) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.776933] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:19:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K#include nested depth 200 exceeds maximum of 200 (use -fmax-include-depth=DEPTH to increase the maximum)\n'}
+[0.776978] (finalProject) StderrLine: {'line': b'   19 | #include <lifecycle_msgs/srv/get_state.hpp>\n'}
+[0.777021] (finalProject) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.777064] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:20:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K#include nested depth 200 exceeds maximum of 200 (use -fmax-include-depth=DEPTH to increase the maximum)\n'}
+[0.777222] (finalProject) StderrLine: {'line': b'   20 | #include <action_msgs/srv/cancel_goal.hpp>\n'}
+[0.777313] (finalProject) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.777414] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:21:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K#include nested depth 200 exceeds maximum of 200 (use -fmax-include-depth=DEPTH to increase the maximum)\n'}
+[0.777468] (finalProject) StderrLine: {'line': b'   21 | #include <chrono>\n'}
+[0.777656] (finalProject) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.777812] (finalProject) StderrLine: {'line': b'\x1b[01m\x1b[K/home/shruthir/CSE180FinalProject/src/finalProject/src/nav.hpp:19:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Klifecycle_msgs/srv/get_state.hpp: No such file or directory\n'}
+[0.777913] (finalProject) StderrLine: {'line': b'   19 | #include \x1b[01;31m\x1b[K<lifecycle_msgs/srv/get_state.hpp>\x1b[m\x1b[K\n'}
+[0.778010] (finalProject) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.778111] (finalProject) StderrLine: {'line': b'compilation terminated.\n'}
+[0.778198] (finalProject) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation.cpp.o] Error 1\n'}
+[0.778317] (finalProject) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/navigation_node.dir/all] Error 2\n'}
+[0.778407] (finalProject) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.778693] (finalProject) CommandEnded: {'returncode': 2}
+[0.796624] (finalProject) JobEnded: {'identifier': 'finalProject', 'rc': 2}
+[0.801792] (-) TimerEvent: {}
+[0.807310] (-) EventReactorShutdown: {}
