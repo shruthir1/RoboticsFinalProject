@@ -1,4 +1,5 @@
 #include <rclcpp/rclcpp.hpp> 
+//need to find the proper way to include his nav2 library -> need to look into this, makes stuff a bunch easier 
 #include <nav.hpp>
 #include <iostream>
 //make an array of all x and y coordinates, use for loop for exery x all y's and for every y all x's in this for loop we call the waypoints function. 
@@ -87,11 +88,6 @@ int main(int argc,char **argv) {
  
   rclcpp::init(argc,argv); // initialize ROS 
   Navigator navigator(true,false); // create node with debug info but not verbose
-  
-  //if we go to intentded position we want to spin 360 and then continue moving
-  while ( ! navigator.IsTaskComplete() ) {
-    // busy waiting for task to be completed
-  }
 
 
   while (!navigator.IsTaskComplete()) {
