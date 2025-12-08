@@ -31,23 +31,15 @@ private:
    }
 
    void newWaypoints(int x, int y, int w){
+    //use occupancy grid, if there is an obstacle here then we want to avoid -> obstacle here would mean grid cost is nonzero (i think) 
+    //^ need to figure out how to do this
+    //if(grid cost is nonzero) break; else: continue navigating towards
     //sping 360 at the start of every waypoint 
       navigator.Spin();
       navigator.Spin();
       navigator.Spin();
       navigator.Spin();
     //creating target waypoint
-    //max Y coorindates are -38 to 24
-    //max X coordinates are 
-
-    //spin at original human positions
-    //if(humanFound){
-      //int humanX = 
-      //int humanY = 
-      //if(humanCount != 2){
-          //humanFound = false;
-  //}
-
     if(humanFound){ 
         if(humanCount !=2){
             finalHuman1x = x;
@@ -105,7 +97,7 @@ int main(int argc,char **argv) {
   while (!navigator.IsTaskComplete()) {
     return; 
   }
-  
+  //if we dont spin what we to be reoccuring then we need another "patrol-timer" like function 
   rclcpp::spin(); // here the spin statement needs to wait for whether human was found info from perception, if not found keep calling relevant functions 
   rclcpp::shutdown(); // shutdown ROS
   return 0;
