@@ -1,0 +1,14 @@
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In constructor ‘[01m[KNavigationNode::[01;32m[KNavigationNode[m[K()[m[K’:
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:217:25:[m[K [01;31m[Kerror: [m[K‘[01m[KinitalPos[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+  217 |     geometry_msgs::msg::[01;31m[KinitalPos[m[K h1;
+      |                         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:216:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KhumanX[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  216 |     int [01;35m[KhumanX[m[K[2] = {0, 1};
+      |         [01;35m[K^~~~~~[m[K
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K callback[m[K(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:341:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  341 | void callback([01;35m[Kconst nav_msgs::msg::OccupancyGrid::SharedPtr msg[m[K){
+      |               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/navigation_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

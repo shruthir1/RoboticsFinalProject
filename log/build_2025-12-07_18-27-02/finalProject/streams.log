@@ -1,0 +1,33 @@
+[0.019s] Invoking command in '/home/shruthir/CSE180FinalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
+[0.089s] [ 66%] Built target locomotion_node
+[0.089s] [ 66%] Built target perception_node
+[0.098s] [ 83%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o[0m
+[2.750s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K callback[m[K(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.750s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:346:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.751s]   346 | void callback([01;35m[Kconst nav_msgs::msg::OccupancyGrid::SharedPtr msg[m[K){
+[2.751s]       |               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[9.946s] [100%] [32m[1mLinking CXX executable navigation_node[0m
+[10.757s] [100%] Built target navigation_node
+[10.795s] Invoked command in '/home/shruthir/CSE180FinalProject/build/finalProject' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
+[10.812s] Invoking command in '/home/shruthir/CSE180FinalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shruthir/CSE180FinalProject/build/finalProject
+[10.823s] -- Install configuration: ""
+[10.827s] -- Installing: /home/shruthir/CSE180FinalProject/install/finalProject/lib/finalProject/navigation_node
+[10.833s] -- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/install/finalProject/lib/finalProject/navigation_node" to ""
+[10.833s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/lib/finalProject/perception_node
+[10.835s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/lib/finalProject/locomotion_node
+[10.835s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/ament_index/resource_index/package_run_dependencies/finalProject
+[10.835s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/ament_index/resource_index/parent_prefix_path/finalProject
+[10.836s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/environment/ament_prefix_path.sh
+[10.836s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/environment/ament_prefix_path.dsv
+[10.837s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/environment/path.sh
+[10.838s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/environment/path.dsv
+[10.838s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/local_setup.bash
+[10.838s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/local_setup.sh
+[10.839s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/local_setup.zsh
+[10.839s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/local_setup.dsv
+[10.839s] -- Installing: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/package.dsv
+[10.841s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/ament_index/resource_index/packages/finalProject
+[10.842s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/cmake/finalProjectConfig.cmake
+[10.842s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/cmake/finalProjectConfig-version.cmake
+[10.844s] -- Up-to-date: /home/shruthir/CSE180FinalProject/install/finalProject/share/finalProject/package.xml
+[10.847s] Invoked command in '/home/shruthir/CSE180FinalProject/build/finalProject' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shruthir/CSE180FinalProject/build/finalProject

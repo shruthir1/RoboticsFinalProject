@@ -1,0 +1,23 @@
+[0.055s] Invoking command in '/home/shruthir/CSE180FinalProject/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
+[0.273s] [ 33%] Built target locomotion_node
+[0.278s] [ 50%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation.cpp.o[0m
+[0.278s] [ 83%] Built target perception_node
+[3.488s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In constructor ‘[01m[KNavigationNode::[01;32m[KNavigationNode[m[K()[m[K’:
+[3.488s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:217:25:[m[K [01;31m[Kerror: [m[K‘[01m[KintialPose[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[3.489s]   217 |     geometry_msgs::msg::[01;31m[KintialPose[m[K h1, h2;
+[3.489s]       |                         [01;31m[K^~~~~~~~~~[m[K
+[3.497s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:218:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kh1[m[K’ was not declared in this scope; did you mean ‘[01m[Ky1[m[K’?
+[3.497s]   218 |     [01;31m[Kh1[m[K.position.x = 1.0;
+[3.497s]       |     [01;31m[K^~[m[K
+[3.497s]       |     [32m[Ky1[m[K
+[3.504s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:221:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kh2[m[K’ was not declared in this scope
+[3.505s]   221 |     [01;31m[Kh2[m[K.position.x = 1.0;
+[3.505s]       |     [01;31m[K^~[m[K
+[3.541s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K callback[m[K(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.541s] [01m[K/home/shruthir/CSE180FinalProject/src/finalProject/src/navigation.cpp:346:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.542s]   346 | void callback([01;35m[Kconst nav_msgs::msg::OccupancyGrid::SharedPtr msg[m[K){
+[3.542s]       |               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[7.172s] gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76: CMakeFiles/navigation_node.dir/src/navigation.cpp.o] Error 1
+[7.172s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/navigation_node.dir/all] Error 2
+[7.173s] gmake: *** [Makefile:146: all] Error 2
+[7.176s] Invoked command in '/home/shruthir/CSE180FinalProject/build/finalProject' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/build/finalProject -- -j12 -l12
