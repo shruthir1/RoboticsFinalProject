@@ -7,21 +7,18 @@
 #include <geometry_msgs/msg/pose_array.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <nav2_msgs/action/navigate_to_pose.hpp>
-
-
+#include <nav_msgs/msg/occupancy_grid.hpp>
 
 using namespace std::chrono_literals;
 
 class NavigationNode : public rclcpp::Node{
 public:
-  using GoalHandleNavigate = rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>;
-  using GoalHandleFollowPath = rclcpp_action::ClientGoalHandle<nav2_msgs::action::FollowPath>;
-
+  using NavigateToPose = nav2_msgs::action::NavigateToPose;
+  using GoalHandleNav = rclcpp_action::ClientGoalHandle<NavigateToPose>;
 
   NavigationNode() : Node("navigation_node"), current_wp_(0), goal_in_progress_(false){
-    nav_client_ = rclcpp_action::create_client<GoToPose>(
-    this, "go_to_pose");
-
+    nav_client_ = rclcpp_action::create_client<NavigateToPose>(
+      this, "navigate_to_pose");
 
     humans_sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
       "/humans_moved", 10,
@@ -68,7 +65,7 @@ private:
 
     const auto &goal_pose = waypoints_[current_wp_];
 
-    GoToPose::Goal goal;
+    NavigateToPose::Goal goal;
     goal.pose = goal_pose;
 
     RCLCPP_INFO(get_logger(),
@@ -142,10 +139,19 @@ private:
   bool goal_in_progress_;
 };
 
+void callback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg){
+  //
+}
+
 int main(int argc, char **argv){
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<NavigationNode>());
+  // auto nodeh = std::make_shared<NavigationNode>();
+
+  rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr sub;
+  auto nodeh = rclcpp::Node::make_shared("loadingMap");
+  sub = nodeh->create_subscription<nav_msgs::msg::OccupancyGrid>("/map",10, &callback);
+
+  rclcpp::spin(nodeh);
   rclcpp::shutdown();
   return 0;
 }
-
