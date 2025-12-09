@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnavigator.a CMakeFiles/navigator.dir/src/navigation.cpp.o
+/usr/bin/ranlib libnavigator.a

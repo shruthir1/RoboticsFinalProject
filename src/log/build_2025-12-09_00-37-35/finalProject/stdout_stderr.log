@@ -1,0 +1,20 @@
+[ 22%] Built target locomotion_node
+[ 44%] Built target navigator
+[ 77%] Built target nav
+[100%] Built target perception_node
+-- Install configuration: ""
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/library_path.sh
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/library_path.dsv
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/include
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/include/finalProject
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/include/finalProject/navigation.hpp
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/libnavigator.a
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/nav
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/perception_node
+-- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/locomotion_node
+[31mCMake Error at cmake_install.cmake:134 (file):
+  file INSTALL cannot find
+  "/home/shruthir/CSE180FinalProject/src/finalProject/launch": No such file
+  or directory.
+
+[0m

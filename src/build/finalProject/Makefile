@@ -198,30 +198,17 @@ finalProject_uninstall/fast:
 .PHONY : finalProject_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named navigation_node
+# Target rules for targets named navigator
 
 # Build rule for target.
-navigation_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 navigation_node
-.PHONY : navigation_node
+navigator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 navigator
+.PHONY : navigator
 
 # fast build rule for target.
-navigation_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_node.dir/build.make CMakeFiles/navigation_node.dir/build
-.PHONY : navigation_node/fast
-
-#=============================================================================
-# Target rules for targets named perception_node
-
-# Build rule for target.
-perception_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perception_node
-.PHONY : perception_node
-
-# fast build rule for target.
-perception_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/perception_node.dir/build.make CMakeFiles/perception_node.dir/build
-.PHONY : perception_node/fast
+navigator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/build
+.PHONY : navigator/fast
 
 #=============================================================================
 # Target rules for targets named locomotion_node
@@ -235,6 +222,32 @@ locomotion_node: cmake_check_build_system
 locomotion_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/locomotion_node.dir/build.make CMakeFiles/locomotion_node.dir/build
 .PHONY : locomotion_node/fast
+
+#=============================================================================
+# Target rules for targets named nav
+
+# Build rule for target.
+nav: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nav
+.PHONY : nav
+
+# fast build rule for target.
+nav/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/build
+.PHONY : nav/fast
+
+#=============================================================================
+# Target rules for targets named perception_node
+
+# Build rule for target.
+perception_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 perception_node
+.PHONY : perception_node
+
+# fast build rule for target.
+perception_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/perception_node.dir/build.make CMakeFiles/perception_node.dir/build
+.PHONY : perception_node/fast
 
 src/locomotion.o: src/locomotion.cpp.o
 .PHONY : src/locomotion.o
@@ -260,12 +273,37 @@ src/locomotion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/locomotion_node.dir/build.make CMakeFiles/locomotion_node.dir/src/locomotion.cpp.s
 .PHONY : src/locomotion.cpp.s
 
+src/nav.o: src/nav.cpp.o
+.PHONY : src/nav.o
+
+# target to build an object file
+src/nav.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/nav.cpp.o
+.PHONY : src/nav.cpp.o
+
+src/nav.i: src/nav.cpp.i
+.PHONY : src/nav.i
+
+# target to preprocess a source file
+src/nav.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/nav.cpp.i
+.PHONY : src/nav.cpp.i
+
+src/nav.s: src/nav.cpp.s
+.PHONY : src/nav.s
+
+# target to generate assembly for a file
+src/nav.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/nav.cpp.s
+.PHONY : src/nav.cpp.s
+
 src/navigation.o: src/navigation.cpp.o
 .PHONY : src/navigation.o
 
 # target to build an object file
 src/navigation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_node.dir/build.make CMakeFiles/navigation_node.dir/src/navigation.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/src/navigation.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/navigation.cpp.o
 .PHONY : src/navigation.cpp.o
 
 src/navigation.i: src/navigation.cpp.i
@@ -273,7 +311,8 @@ src/navigation.i: src/navigation.cpp.i
 
 # target to preprocess a source file
 src/navigation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_node.dir/build.make CMakeFiles/navigation_node.dir/src/navigation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/src/navigation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/navigation.cpp.i
 .PHONY : src/navigation.cpp.i
 
 src/navigation.s: src/navigation.cpp.s
@@ -281,7 +320,8 @@ src/navigation.s: src/navigation.cpp.s
 
 # target to generate assembly for a file
 src/navigation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_node.dir/build.make CMakeFiles/navigation_node.dir/src/navigation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/src/navigation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/navigation.cpp.s
 .PHONY : src/navigation.cpp.s
 
 src/perception.o: src/perception.cpp.o
@@ -324,11 +364,15 @@ help:
 	@echo "... finalProject_uninstall"
 	@echo "... uninstall"
 	@echo "... locomotion_node"
-	@echo "... navigation_node"
+	@echo "... nav"
+	@echo "... navigator"
 	@echo "... perception_node"
 	@echo "... src/locomotion.o"
 	@echo "... src/locomotion.i"
 	@echo "... src/locomotion.s"
+	@echo "... src/nav.o"
+	@echo "... src/nav.i"
+	@echo "... src/nav.s"
 	@echo "... src/navigation.o"
 	@echo "... src/navigation.i"
 	@echo "... src/navigation.s"

@@ -1,0 +1,24 @@
+[0.023s] Invoking command in '/home/shruthir/CSE180FinalProject/src/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/src/build/finalProject -- -j12 -l12
+[0.102s] [ 22%] Built target locomotion_node
+[0.104s] [ 44%] Built target navigator
+[0.107s] [ 77%] Built target nav
+[0.111s] [100%] Built target perception_node
+[0.123s] Invoked command in '/home/shruthir/CSE180FinalProject/src/build/finalProject' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/src/build/finalProject -- -j12 -l12
+[0.133s] Invoking command in '/home/shruthir/CSE180FinalProject/src/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shruthir/CSE180FinalProject/src/build/finalProject
+[0.140s] -- Install configuration: ""
+[0.141s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/library_path.sh
+[0.141s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/library_path.dsv
+[0.141s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/include
+[0.141s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/include/finalProject
+[0.141s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/include/finalProject/navigation.hpp
+[0.142s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/libnavigator.a
+[0.143s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/nav
+[0.144s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/perception_node
+[0.144s] -- Up-to-date: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/locomotion_node
+[0.145s] [31mCMake Error at cmake_install.cmake:134 (file):
+[0.145s]   file INSTALL cannot find
+[0.145s]   "/home/shruthir/CSE180FinalProject/src/finalProject/launch": No such file
+[0.145s]   or directory.
+[0.146s] 
+[0.146s] [0m
+[0.146s] Invoked command in '/home/shruthir/CSE180FinalProject/src/build/finalProject' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/shruthir/CSE180FinalProject/src/build/finalProject

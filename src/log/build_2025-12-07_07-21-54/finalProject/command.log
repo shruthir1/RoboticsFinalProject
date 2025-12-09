@@ -1,2 +1,0 @@
-Invoking command in '/home/shruthir/CSE180FinalProject/src/build/finalProject': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/src/build/finalProject -- -j12 -l12
-Invoked command in '/home/shruthir/CSE180FinalProject/src/build/finalProject' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/shruthir/CSE180FinalProject/src/build/finalProject -- -j12 -l12

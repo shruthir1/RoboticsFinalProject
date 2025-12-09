@@ -1,0 +1,70 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.11 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found nav2_msgs: 1.3.10 (/opt/ros/jazzy/share/nav2_msgs/cmake)
+-- Found rclcpp_action: 28.1.11 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+-- Found lifecycle_msgs: 2.0.3 (/opt/ros/jazzy/share/lifecycle_msgs/cmake)
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/shruthir/CSE180FinalProject/src/finalProject/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (6.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/shruthir/CSE180FinalProject/src/build/finalProject
+[ 11%] [32mBuilding CXX object CMakeFiles/nav.dir/src/nav.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/locomotion_node.dir/src/locomotion.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/navigator.dir/src/navigation.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/nav.dir/src/navigation.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/perception_node.dir/src/perception.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable locomotion_node[0m
+[ 66%] Built target locomotion_node
+[ 77%] [32m[1mLinking CXX executable perception_node[0m
+[ 77%] Built target perception_node
+[ 88%] [32m[1mLinking CXX executable nav[0m
+[100%] [32m[1mLinking CXX static library libnavigator.a[0m
+[100%] Built target navigator
+[100%] Built target nav
+-- Install configuration: ""
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/library_path.sh
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/share/finalProject/environment/library_path.dsv
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/include
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/include/finalProject
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/include/finalProject/navigation.hpp
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/libnavigator.a
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/nav
+-- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/nav" to ""
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/perception_node
+-- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/perception_node" to ""
+-- Installing: /home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/locomotion_node
+-- Set non-toolchain portion of runtime path of "/home/shruthir/CSE180FinalProject/src/install/finalProject/lib/finalProject/locomotion_node" to ""

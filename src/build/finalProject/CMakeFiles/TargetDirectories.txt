@@ -1,8 +1,9 @@
 /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/uninstall.dir
 /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/finalProject_uninstall.dir
-/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/navigation_node.dir
-/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/perception_node.dir
+/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/navigator.dir
 /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/locomotion_node.dir
+/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/nav.dir
+/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/perception_node.dir
 /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/test.dir
 /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/edit_cache.dir
 /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles/rebuild_cache.dir

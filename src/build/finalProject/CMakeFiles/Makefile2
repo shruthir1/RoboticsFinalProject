@@ -63,9 +63,10 @@ CMAKE_BINARY_DIR = /home/shruthir/CSE180FinalProject/src/build/finalProject
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/navigation_node.dir/all
-all: CMakeFiles/perception_node.dir/all
+all: CMakeFiles/navigator.dir/all
 all: CMakeFiles/locomotion_node.dir/all
+all: CMakeFiles/nav.dir/all
+all: CMakeFiles/perception_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -75,9 +76,10 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/finalProject_uninstall.dir/clean
-clean: CMakeFiles/navigation_node.dir/clean
-clean: CMakeFiles/perception_node.dir/clean
+clean: CMakeFiles/navigator.dir/clean
 clean: CMakeFiles/locomotion_node.dir/clean
+clean: CMakeFiles/nav.dir/clean
+clean: CMakeFiles/perception_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -133,56 +135,30 @@ CMakeFiles/finalProject_uninstall.dir/clean:
 .PHONY : CMakeFiles/finalProject_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/navigation_node.dir
+# Target rules for target CMakeFiles/navigator.dir
 
 # All Build rule for target.
-CMakeFiles/navigation_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_node.dir/build.make CMakeFiles/navigation_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_node.dir/build.make CMakeFiles/navigation_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles --progress-num=3,4 "Built target navigation_node"
-.PHONY : CMakeFiles/navigation_node.dir/all
+CMakeFiles/navigator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles --progress-num=6,7 "Built target navigator"
+.PHONY : CMakeFiles/navigator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/navigation_node.dir/rule: cmake_check_build_system
+CMakeFiles/navigator.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/navigation_node.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/navigator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles 0
-.PHONY : CMakeFiles/navigation_node.dir/rule
+.PHONY : CMakeFiles/navigator.dir/rule
 
 # Convenience name for target.
-navigation_node: CMakeFiles/navigation_node.dir/rule
-.PHONY : navigation_node
+navigator: CMakeFiles/navigator.dir/rule
+.PHONY : navigator
 
 # clean rule for target.
-CMakeFiles/navigation_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_node.dir/build.make CMakeFiles/navigation_node.dir/clean
-.PHONY : CMakeFiles/navigation_node.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/perception_node.dir
-
-# All Build rule for target.
-CMakeFiles/perception_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/perception_node.dir/build.make CMakeFiles/perception_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/perception_node.dir/build.make CMakeFiles/perception_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles --progress-num=5,6 "Built target perception_node"
-.PHONY : CMakeFiles/perception_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/perception_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/perception_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles 0
-.PHONY : CMakeFiles/perception_node.dir/rule
-
-# Convenience name for target.
-perception_node: CMakeFiles/perception_node.dir/rule
-.PHONY : perception_node
-
-# clean rule for target.
-CMakeFiles/perception_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/perception_node.dir/build.make CMakeFiles/perception_node.dir/clean
-.PHONY : CMakeFiles/perception_node.dir/clean
+CMakeFiles/navigator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigator.dir/build.make CMakeFiles/navigator.dir/clean
+.PHONY : CMakeFiles/navigator.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/locomotion_node.dir
@@ -209,6 +185,58 @@ locomotion_node: CMakeFiles/locomotion_node.dir/rule
 CMakeFiles/locomotion_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/locomotion_node.dir/build.make CMakeFiles/locomotion_node.dir/clean
 .PHONY : CMakeFiles/locomotion_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/nav.dir
+
+# All Build rule for target.
+CMakeFiles/nav.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles --progress-num=3,4,5 "Built target nav"
+.PHONY : CMakeFiles/nav.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/nav.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nav.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles 0
+.PHONY : CMakeFiles/nav.dir/rule
+
+# Convenience name for target.
+nav: CMakeFiles/nav.dir/rule
+.PHONY : nav
+
+# clean rule for target.
+CMakeFiles/nav.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/clean
+.PHONY : CMakeFiles/nav.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/perception_node.dir
+
+# All Build rule for target.
+CMakeFiles/perception_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/perception_node.dir/build.make CMakeFiles/perception_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/perception_node.dir/build.make CMakeFiles/perception_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles --progress-num=8,9 "Built target perception_node"
+.PHONY : CMakeFiles/perception_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/perception_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/perception_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shruthir/CSE180FinalProject/src/build/finalProject/CMakeFiles 0
+.PHONY : CMakeFiles/perception_node.dir/rule
+
+# Convenience name for target.
+perception_node: CMakeFiles/perception_node.dir/rule
+.PHONY : perception_node
+
+# clean rule for target.
+CMakeFiles/perception_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/perception_node.dir/build.make CMakeFiles/perception_node.dir/clean
+.PHONY : CMakeFiles/perception_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
