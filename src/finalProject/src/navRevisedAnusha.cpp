@@ -1,6 +1,6 @@
 #include <rclcpp/rclcpp.hpp> 
 //need to find the proper way to include his nav2 library -> need to look into this, makes stuff a bunch easier 
-#include <nav.hpp>
+#include <finalProject/navigation.hpp>
 #include <geometry_msgs/msg/pose.hpp>
 #include <vector>
 #include <iostream>
@@ -16,15 +16,11 @@ public:
         loadWaypoints();
 
         // wait for navigation stack to become operationale
-        navigator_.WaitUntilNav2Active();
-
-        // send next waypoint if robot is done moving
-        timer_ = this.create_wall_timer(std::chrono::milliseconds(200), std::bind(&NavigationNode::processNextWaypoint, this));
+        navigator_->WaitUntilNav2Active();
     }
 
 private:
     std::shared_ptr<Navigator> navigator_;
-    rclcpp::TimerBase::SharedPtr timer_;
 
     // vector to hold waypoints
     std::vector<geometry_msgs::msg::Pose> waypoints_;
@@ -52,12 +48,12 @@ private:
             // unfinished
         };
 
-        for(double &c : coords){
+        for(std::pair<double,double> &c : coords){
             geometry_msgs::msg::Pose pose;
             pose.position.x = c.first;
             pose.position.y = c.second;
-            p.position.z = -0.10; //this is the default in gazebo??
-            p.orientation.w = 1.0; 
+            pose.position.z = -0.10; //this is the default in gazebo??
+            pose.orientation.w = 1.0; 
             //store the created pose into waypoints vector
             waypoints_.push_back(pose);
         }
@@ -70,46 +66,46 @@ private:
         init->position.y = -21.3;
         init->position.z = -0.10; //double check in gazebo
         init->orientation.w = 1.53;
-        navigator.SetInitialPose(init);
+        navigator_->SetInitialPose(init);
         RCLCPP_INFO(this->get_logger(), "Initial pose set.");
    }
 
   //this function checks if the last action is complete, spins once at each waypoint, then sends robot to next waypoint 
   void callback(){
-    if(!humanFound){
+    // if(!humanFound){
         //no more waypoints
         if(current_waypoint_index_ >= waypoints_.size()){
             RCLCPP_INFO(this->get_logger(), "Finished all waypoints.");
             return;
         }
 
-        while ( ! navigator_.IsTaskComplete() ) {
+        while ( ! navigator_->IsTaskComplete() ) {
             // busy waiting for task to be completed
         }
 
         if (current_waypoint_index_ > 0){
             RCLCPP_INFO(this->get_logger(), "Arrived at waypoint %d -> spinning...", current_waypoint_index_ - 1);
             //spin 90 degrees four times at each waypoint to do a full rotation
-            navigator_.Spin()
-            navigator_.Spin()
-            navigator_.Spin()
-            navigator_.Spin()
+            navigator_->Spin();
+            navigator_->Spin();
+            navigator_->Spin();
+            navigator_->Spin();
             return;
         }
-        while ( ! navigator_.IsTaskComplete() ) {
+        while ( ! navigator_->IsTaskComplete() ) {
             // busy waiting for task to be completed
         }
 
         //for first waypoint or after spinning:
         std::shared_ptr<geometry_msgs::msg::Pose> next = std::make_shared<geometry_msgs::msg::Pose>(waypoints_[current_waypoint_index_]);
         RCLCPP_INFO(this->get_logger(), "Navigating to waypoint %d at (%.2f, %.2f)", current_waypoint_index_, next->position.x, next->position.y);
-        navigator_.GoToPose(next);
-        while ( ! navigator_.IsTaskComplete() ) {
+        navigator_->GoToPose(next);
+        while ( ! navigator_->IsTaskComplete() ) {
             // busy waiting for task to be completed
         }
         current_waypoint_index_++;
     }
-  }
+//   }
 
 
 };
