@@ -1,0 +1,126 @@
+#include <rclcpp/rclcpp.hpp> 
+//need to find the proper way to include his nav2 library -> need to look into this, makes stuff a bunch easier 
+#include <nav.hpp>
+#include <geometry_msgs/msg/pose.hpp>
+#include <vector>
+#include <iostream>
+
+//need to add human detection functionality 
+class NavigationNode : public rclcpp::Node
+{
+public:
+    NavigationNode() : Node("navigation_node"){
+        // initialize Navigator inside constructor
+        navigator_ = std::make_shared<Navigator>(true, false); // debug info enabled, verbose disabled
+        initializePose();
+        loadWaypoints();
+
+        // wait for navigation stack to become operationale
+        navigator_.WaitUntilNav2Active();
+
+        // send next waypoint if robot is done moving
+        timer_ = this.create_wall_timer(std::chrono::milliseconds(200), std::bind(&NavigationNode::processNextWaypoint, this));
+    }
+
+private:
+    std::shared_ptr<Navigator> navigator_;
+    rclcpp::TimerBase::SharedPtr timer_;
+
+    // vector to hold waypoints
+    std::vector<geometry_msgs::msg::Pose> waypoints_;
+    int current_waypoint_index_ = 0;
+   
+   void loadWaypoints(){
+    std::vector<std::pair<double,double>> coords = {
+            {2.12, 14},
+            {14, -16},
+            {12, -12},
+            {12, -5},
+            {12, 3},
+            {6, 3},
+            {6, 6},
+            {13.5, 6},
+            {13.5, 14},
+            {0, 14},
+            {0, 16.5},
+            {10, 21},
+            {-6, 24},
+            {-9, 20},
+            {-13, 24},
+            {-13, 7},
+            {-13, 6.3}
+            // unfinished
+        };
+
+        for(double &c : coords){
+            geometry_msgs::msg::Pose pose;
+            pose.position.x = c.first;
+            pose.position.y = c.second;
+            p.position.z = -0.10; //this is the default in gazebo??
+            p.orientation.w = 1.0; 
+            //store the created pose into waypoints vector
+            waypoints_.push_back(pose);
+        }
+    }
+
+    void initializePose(){
+        // first: it is mandatory to initialize the pose of the robot
+        geometry_msgs::msg::Pose::SharedPtr init = std::make_shared<geometry_msgs::msg::Pose>();
+        init->position.x = 2.12;
+        init->position.y = -21.3;
+        init->position.z = -0.10; //double check in gazebo
+        init->orientation.w = 1.53;
+        navigator.SetInitialPose(init);
+        RCLCPP_INFO(this->get_logger(), "Initial pose set.");
+   }
+
+  //this function checks if the last action is complete, spins once at each waypoint, then sends robot to next waypoint 
+  void callback(){
+    if(!humanFound){
+        //no more waypoints
+        if(current_waypoint_index_ >= waypoints_.size()){
+            RCLCPP_INFO(this->get_logger(), "Finished all waypoints.");
+            return;
+        }
+
+        while ( ! navigator_.IsTaskComplete() ) {
+            // busy waiting for task to be completed
+        }
+
+        if (current_waypoint_index_ > 0){
+            RCLCPP_INFO(this->get_logger(), "Arrived at waypoint %d -> spinning...", current_waypoint_index_ - 1);
+            //spin 90 degrees four times at each waypoint to do a full rotation
+            navigator_.Spin()
+            navigator_.Spin()
+            navigator_.Spin()
+            navigator_.Spin()
+            return;
+        }
+        while ( ! navigator_.IsTaskComplete() ) {
+            // busy waiting for task to be completed
+        }
+
+        //for first waypoint or after spinning:
+        std::shared_ptr<geometry_msgs::msg::Pose> next = std::make_shared<geometry_msgs::msg::Pose>(waypoints_[current_waypoint_index_]);
+        RCLCPP_INFO(this->get_logger(), "Navigating to waypoint %d at (%.2f, %.2f)", current_waypoint_index_, next->position.x, next->position.y);
+        navigator_.GoToPose(next);
+        while ( ! navigator_.IsTaskComplete() ) {
+            // busy waiting for task to be completed
+        }
+        current_waypoint_index_++;
+    }
+  }
+
+
+};
+
+int main(int argc,char **argv) {
+    rclcpp::init(argc,argv); // initialize ROS 
+    // Navigator navigator(true,false); // create node with debug info but not verbose
+    
+    auto nodeh = std::make_shared<NavigationNode>();
+    //if we dont spin what we to be reoccuring then we need another "patrol-timer" like function 
+    rclcpp::spin(nodeh); // here the spin statement needs to wait for whether human was found info from perception, if not found keep calling relevant functions 
+    rclcpp::shutdown(); // shutdown ROS
+    return 0;
+}
