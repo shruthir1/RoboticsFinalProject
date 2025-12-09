@@ -23,20 +23,25 @@ find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
+find_package(lifecycle_msgs REQUIRED)
+
 
 include_directories(include)
 
 # ----- Executables -----
 
-add_library(finalProject src/navigation.cpp) #unsure 
+add_library(navigator src/navigation.cpp) #unsure 
 
-add_executable(navigation_node src/navRevisedAnusha.cpp)
+add_executable(navigation_node src/navRevised.cpp)
 ament_target_dependencies(navigation_node
   rclcpp
   rclcpp_action
   geometry_msgs
   nav2_msgs
+  lifecycle_msgs
 )
+
+target_link_libraries(navigation_node navigator)
 
 add_executable(perception_node src/perception.cpp)
 ament_target_dependencies(perception_node
@@ -50,8 +55,24 @@ ament_target_dependencies(locomotion_node
   rclcpp
   geometry_msgs
 )
-# unsure
-ament_export_targets(finalProjectlib HAS_LIBRARY_TARGET) 
+
+target_include_directories(navigator
+  PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
+ament_export_targets(navigatorlib HAS_LIBRARY_TARGET) # unsure
+
+ament_target_dependencies(navigator
+  rclcpp
+  geometry_msgs
+  lifecycle_msgs
+  nav2_msgs
+  rclcpp_action
+) #unsure
+
+ament_export_targets(navigatorlib HAS_LIBRARY_TARGET) # unsure
 
 # ----- Installation -----
 
@@ -59,7 +80,7 @@ install(TARGETS
   navigation_node
   perception_node
   locomotion_node
-  EXPORT finalProjectlib #unsure
+  EXPORT navigatorlib #unsure
   DESTINATION lib/${PROJECT_NAME}
 )
 
