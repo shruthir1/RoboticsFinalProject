@@ -28,7 +28,9 @@ include_directories(include)
 
 # ----- Executables -----
 
-add_executable(navigation_node src/navigation.cpp)
+add_library(finalProject src/navigation.cpp) #unsure 
+
+add_executable(navigation_node src/navRevisedAnusha.cpp)
 ament_target_dependencies(navigation_node
   rclcpp
   rclcpp_action
@@ -48,6 +50,8 @@ ament_target_dependencies(locomotion_node
   rclcpp
   geometry_msgs
 )
+# unsure
+ament_export_targets(finalProjectlib HAS_LIBRARY_TARGET) 
 
 # ----- Installation -----
 
@@ -55,6 +59,7 @@ install(TARGETS
   navigation_node
   perception_node
   locomotion_node
+  EXPORT finalProjectlib #unsure
   DESTINATION lib/${PROJECT_NAME}
 )
 
