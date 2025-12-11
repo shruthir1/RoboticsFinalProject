@@ -83,7 +83,8 @@ public:
     void scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
         //if we dont have the initial map or we dont have the current pose then we cant utilize scanner
         if(!has_initial_map || !has_pose){
-           RCLCPP_WARN(get_logger(),  "dont have enough info fo scanner"); 
+           RCLCPP_WARN(get_logger(),  "dont have enough info fo scanner have map: %d, have pose: %d", has_initial_map, has_pose); 
+
           return;
         }
         
@@ -113,7 +114,6 @@ public:
             float wy = ry + range * sin(r_angle_wframe); // y coordinate of the global position (i think)
             
             //if there is a change in the map its likely human was found 
-            //pending: creatae changeHappend()
             if(changeHappened(wx, wy)){
               RCLCPP_WARN(get_logger(),  "Change in map at (%.2f, %.2f)", wx, wy);  
               addClusters(wx, wy);
@@ -188,7 +188,7 @@ public:
         HumanCluster newC;
         newC.x_sum = px;
         newC.y_sum = py;
-        newC.count++;
+        newC.count =1;
 
         clusters.push_back(newC);
 
@@ -198,7 +198,7 @@ public:
         //lidar gives points in global coordinates, this need to be converted to grid valies
         int mx = static_cast<int>((wx - initial_map.info.origin.position.x) / initial_map.info.resolution);
         int my = static_cast<int>((wy - initial_map.info.origin.position.y) / initial_map.info.resolution);
-        RCLCPP_INFO(get_logger(), "converting (%f, %f) into grid value: (%d, %d)", wx, wy, mx, my);
+        RCLCPP_INFO(get_logger(), "converting (%0.2f, %0.2f) into grid value: (%d, %d)", wx, wy, mx, my);
 
         //if my grid points are out of bounds 
         if (mx < 0 || my < 0 ||mx >= (int)initial_map.info.width ||my >= (int)initial_map.info.height) return false;
