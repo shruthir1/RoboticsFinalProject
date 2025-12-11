@@ -173,7 +173,7 @@ public:
 
     void addClusters(float px, float py){
 
-        const float cluster_distance = 0.4;
+        const float cluster_distance = 0.6;
 
         for (size_t i = 0; i < clusters.size(); i++) {
              HumanCluster &c = clusters[i];
@@ -222,6 +222,8 @@ public:
         bool free_before = (initial_map.data[index] == 0);
         //with current map, is this space still free? We are saying above 50 instead of 0 to avoid false positives
         bool now_occupied = (latest_map.data[index] > 50);
+        //if we dont know it might return -1
+         if (latest_map.data[index] < 0) return false;
         // bool scanned = true; //if we made this far then we got a valud range from lidar 
         bool change = false;
         //need to compare prev grid and current grid to look for change 
