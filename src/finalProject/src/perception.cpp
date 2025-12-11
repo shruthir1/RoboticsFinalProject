@@ -40,11 +40,13 @@ public:
      //subscribing to amcl
      //data that we can obtain from amcl: 
      pose_subscriber = create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>("/amcl_pose", 10, std::bind(&PerceptionNode::amclCallback, this, std::placeholders::_1));
-     //subscribing to map
+     //subscribing to a STATIC map to have reference of intial env
      //data we can obtain from map: 
-     map_subscriber = create_subscription<nav_msgs::msg::OccupancyGrid>("/map", 10, std::bind(&PerceptionNode::mapCallback, this, std::placeholders::_1));
+     static_map_subscriber = create_subscription<nav_msgs::msg::OccupancyGrid>("/map", 10, std::bind(&PerceptionNode::staticMapCallback, this, std::placeholders::_1));
      //need to publish human information to other nodes like navigation 
      humans_publisher = create_publisher<geometry_msgs::msg::PoseArray>("/humans_moved", 10);
+     //subscribing to the map that changes when we make changes 
+     dynamic_map_subscriber = create_subscription<nav_msgs::msg::OccupancyGrid>( "/local_costmap/costmap", 10, std::bind(&PerceptionNode::dynamicMapCallback, this, std::placeholders::_1));
 
     RCLCPP_INFO(get_logger(), "PerceptionNode is starting!!");
   }
@@ -52,7 +54,8 @@ public:
   private: 
     //variables for the callback functions:
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_subscriber;
-    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr map_subscriber;
+    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr static_map_subscriber;
+    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr dynamic_map_subscriber;
     rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr pose_subscriber;
     rclcpp::Publisher<geometry_msgs::msg::PoseArray>::SharedPtr humans_publisher;
     bool has_initial_map = false;
@@ -82,8 +85,8 @@ public:
     //info I can get from /scan: range, angle_increment, angle_min, angle_max 
     void scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
         //if we dont have the initial map or we dont have the current pose then we cant utilize scanner
-        if(!has_initial_map || !has_pose){
-           RCLCPP_WARN(get_logger(),  "dont have enough info fo scanner have map: %d, have pose: %d", has_initial_map, has_pose); 
+        if(!has_latest_map || !has_pose){
+           RCLCPP_WARN(get_logger(),  "dont have enough info for scanner have map: %d, have pose: %d", has_latest_map, has_pose); 
 
           return;
         }
@@ -107,7 +110,7 @@ public:
             float r_angle_rframe = msg->angle_min + i * msg->angle_increment;
             
             //robots angle in global frame -> in polar coord
-            float r_angle_wframe = r_angle_rframe + yaw; //minus 90 or some sort of translation to allign the frame 
+            float r_angle_wframe = r_angle_rframe + yaw + 1.5708; //minus 90 or some sort of translation to allign the frame 
 
             //convert polar coordinates to cartesian :)
             float wx = rx + range * cos(r_angle_wframe); // x coordinate of the global position (i think)
@@ -148,16 +151,24 @@ public:
 
     //callback function for /map subscition 
     //info I can get from /map: 
-    void mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg){
-        if(!has_initial_map){
+    void staticMapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg){
+        RCLCPP_INFO(get_logger(), "static map callback called :)");
+        if(!has_initial_map){ 
             initial_map = *msg;
             has_initial_map = true;
             RCLCPP_INFO(get_logger(), "Stored Intial Map!");
         }
 
+        // latest_map = *msg;
+        // has_latest_map = true;
+
+    }
+
+    void dynamicMapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg){
+        RCLCPP_INFO(get_logger(), "dynamic map callback called :)");
         latest_map = *msg;
         has_latest_map = true;
-
+        RCLCPP_INFO(get_logger(), "Updated Dynamic Map!");
     }
 
     void addClusters(float px, float py){
