@@ -24,6 +24,8 @@ find_package(nav_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(lifecycle_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 
 
 include_directories(include)
@@ -39,6 +41,8 @@ ament_target_dependencies(navigation_node
   geometry_msgs
   nav2_msgs
   lifecycle_msgs
+  tf2
+  tf2_geometry_msgs
 )
 
 target_link_libraries(navigation_node navigator)
