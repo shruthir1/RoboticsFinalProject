@@ -46,7 +46,7 @@ public:
      //need to publish human information to other nodes like navigation 
      humans_publisher = create_publisher<geometry_msgs::msg::PoseArray>("/humans_moved", 10);
      //subscribing to the map that changes when we make changes 
-     dynamic_map_subscriber = create_subscription<nav_msgs::msg::OccupancyGrid>( "/local_costmap/costmap", 10, std::bind(&PerceptionNode::dynamicMapCallback, this, std::placeholders::_1));
+     dynamic_map_subscriber = create_subscription<nav_msgs::msg::OccupancyGrid>( "/global_costmap/costmap", 10, std::bind(&PerceptionNode::dynamicMapCallback, this, std::placeholders::_1));
 
     RCLCPP_INFO(get_logger(), "PerceptionNode is starting!!");
   }
@@ -85,8 +85,8 @@ public:
     //info I can get from /scan: range, angle_increment, angle_min, angle_max 
     void scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
         //if we dont have the initial map or we dont have the current pose then we cant utilize scanner
-        if(!has_latest_map || !has_pose){
-           RCLCPP_WARN(get_logger(),  "dont have enough info for scanner have map: %d, have pose: %d", has_latest_map, has_pose); 
+        if(!has_latest_map || !has_initial_map || !has_pose){
+           RCLCPP_WARN(get_logger(),  "dont have enough info for scanner have static map: %d, have pose: %d, have changing map: %d", has_initial_map, has_pose, has_latest_map); 
 
           return;
         }
