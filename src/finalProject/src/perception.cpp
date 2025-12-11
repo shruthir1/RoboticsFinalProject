@@ -198,7 +198,7 @@ public:
         //lidar gives points in global coordinates, this need to be converted to grid valies
         int mx = static_cast<int>((wx - initial_map.info.origin.position.x) / initial_map.info.resolution);
         int my = static_cast<int>((wy - initial_map.info.origin.position.y) / initial_map.info.resolution);
-        RCLCPP_INFO(get_logger(), "converting (%d, %d) into grid value: (%d, %d)", wx, wy, mx, my);
+        RCLCPP_INFO(get_logger(), "converting (%f, %f) into grid value: (%d, %d)", wx, wy, mx, my);
 
         //if my grid points are out of bounds 
         if (mx < 0 || my < 0 ||mx >= (int)initial_map.info.width ||my >= (int)initial_map.info.height) return false;

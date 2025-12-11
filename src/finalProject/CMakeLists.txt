@@ -23,6 +23,8 @@ find_package(rclcpp_action REQUIRED)
 find_package(lifecycle_msgs REQUIRED)
 find_package(action_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 
 
 if(BUILD_TESTING)
@@ -69,7 +71,7 @@ ament_export_targets(navigatorlib HAS_LIBRARY_TARGET)
 ament_export_dependencies(rclcpp geometry_msgs lifecycle_msgs rclcpp_action nav2_msgs)
 ament_target_dependencies(nav rclcpp geometry_msgs lifecycle_msgs rclcpp_action nav2_msgs)
 ament_target_dependencies(locomotion_node rclcpp geometry_msgs)
-ament_target_dependencies(perception_node rclcpp sensor_msgs geometry_msgs)
+ament_target_dependencies(perception_node rclcpp sensor_msgs geometry_msgs nav_msgs tf2 tf2_geometry_msgs)
 # ament_target_dependencies(nav rclcpp geometry_msgs lifecycle_msgs rclcpp_action nav2_msgs)
 
 
@@ -91,7 +93,7 @@ install(TARGETS nav DESTINATION lib/${PROJECT_NAME})
 install(TARGETS perception_node DESTINATION lib/${PROJECT_NAME})
 install(TARGETS locomotion_node DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+# install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 
 
 ament_package()
