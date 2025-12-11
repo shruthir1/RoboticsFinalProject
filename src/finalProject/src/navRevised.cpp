@@ -44,17 +44,17 @@ public:
             "/initialpose", 10);
 
 
-        //timer to call callback function every 5 seconds to send next waypoint
+        //timer to call callback function every 500ms to send next waypoint
         timer_ = this->create_wall_timer(500ms, std::bind(&NavigationNode::callback, this));
         
-
+        current_waypoint_phase_ = 0;
         current_waypoint_index_ = 0;
         waypoints_ = {
-            {2.12, -23.3, 0.0},
             {14.0, -23.3, 0.0},
             {9.0, -21.0, 0.0},
-            {14.0, -16.0, 0.0},
+            {12.0, -17.0, 0.0},
             {9.0, -16.0, 0.0}
+            //adding more
         };
 
         setInitialPose(2.12, -21.3, 1.57); //synchronize gazebo and rviz start positions
@@ -64,44 +64,48 @@ public:
 
 private:
     std::shared_ptr<Navigator> navigator_;
-    rclcpp::TimerBase::SharedPtr timer_;
+
     rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr amcl_sub_;
     rclcpp::Publisher<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr initial_pose_pub_;
 
+    rclcpp::TimerBase::SharedPtr timer_;
+
     std::vector<std::array<double, 3>> waypoints_;
     size_t current_waypoint_index_;
+
     bool sent_goal_ = false;
+    int current_waypoint_phase_ = 0; // 0 is Navigate, 1 is Spin
     geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr last_amcl_pose_;
 
     void setInitialPose(double x, double y, double yaw) {
-    geometry_msgs::msg::PoseWithCovarianceStamped initial_pose;
-    initial_pose.header.stamp = this->now();
-    initial_pose.header.frame_id = "map";
+        geometry_msgs::msg::PoseWithCovarianceStamped initial_pose;
+        initial_pose.header.stamp = this->now();
+        initial_pose.header.frame_id = "map";
 
-    initial_pose.pose.pose.position.x = x;
-    initial_pose.pose.pose.position.y = y;
-    initial_pose.pose.pose.position.z = 0.0;
+        initial_pose.pose.pose.position.x = x;
+        initial_pose.pose.pose.position.y = y;
+        initial_pose.pose.pose.position.z = 0.0;
 
-    tf2::Quaternion q;
-    q.setRPY(0, 0, yaw);
-    q.normalize();
+        tf2::Quaternion q;
+        q.setRPY(0, 0, yaw);
+        q.normalize();
 
-    initial_pose.pose.pose.orientation.x = q.x();
-    initial_pose.pose.pose.orientation.y = q.y();
-    initial_pose.pose.pose.orientation.z = q.z();
-    initial_pose.pose.pose.orientation.w = q.w();
+        initial_pose.pose.pose.orientation.x = q.x();
+        initial_pose.pose.pose.orientation.y = q.y();
+        initial_pose.pose.pose.orientation.z = q.z();
+        initial_pose.pose.pose.orientation.w = q.w();
 
-    //covariance just in case
-    for (size_t i = 0; i < 36; i++) {
-        initial_pose.pose.covariance[i] = 0.0;
+        //covariance just in case
+        for (size_t i = 0; i < 36; i++) {
+            initial_pose.pose.covariance[i] = 0.0;
+        }
+
+        initial_pose_pub_->publish(initial_pose);
+        RCLCPP_INFO(this->get_logger(), "Published initial pose to AMCL: x=%.2f, y=%.2f, yaw=%.2f", x, y, yaw);
     }
 
-    initial_pose_pub_->publish(initial_pose);
-    RCLCPP_INFO(this->get_logger(), "Published initial pose to AMCL: x=%.2f, y=%.2f, yaw=%.2f", x, y, yaw);
-}
-
     
-    //sends robot to next waypoint, triggered every 5 seconds 
+    //sends robot to next waypoint, triggered every 500 ms 
     void callback(){
         //no more waypoints
         if(current_waypoint_index_ >= waypoints_.size()){
@@ -109,48 +113,74 @@ private:
             return;
         }
 
-        if(!sent_goal_){
-            //get current waypoint
-            std::array<double, 3> &wp = waypoints_[current_waypoint_index_];
-            auto pose = std::make_shared<geometry_msgs::msg::Pose>();
+        if(current_waypoint_phase_ ==0){
+            if(!sent_goal_){
+                //get current waypoint
+                std::array<double, 3> &wp = waypoints_[current_waypoint_index_];
+                auto pose = std::make_shared<geometry_msgs::msg::Pose>();
 
-            // position x, y, z
-            pose->position.x = wp[0];
-            pose->position.y = wp[1];
-            pose->position.z = 0.0; //as per gazebo default
+                // position x, y, z
+                pose->position.x = wp[0];
+                pose->position.y = wp[1];
+                pose->position.z = 0.0; //as per gazebo default
 
-            //convert yaw to quat
-            tf2::Quaternion q;
-            q.setRPY(0, 0, wp[2]); // roll=0, pitch=0, yaw=wp[2]
-            q.normalize(); //normalize quaternion to avoid errors
+                //convert yaw to quat
+                tf2::Quaternion q;
+                q.setRPY(0, 0, wp[2]); // roll=0, pitch=0, yaw=wp[2]
+                q.normalize(); //normalize quaternion to avoid errors
 
-            //assign quaternion
-            pose->orientation.x = q.x();
-            pose->orientation.y = q.y();
-            pose->orientation.z = q.z();
-            pose->orientation.w = q.w();
+                //assign quaternion
+                pose->orientation.x = q.x();
+                pose->orientation.y = q.y();
+                pose->orientation.z = q.z();
+                pose->orientation.w = q.w();
 
-            RCLCPP_INFO(this->get_logger(), "Sending waypoint %ld: (%.2f, %.2f).", current_waypoint_index_ + 1, wp[0], wp[1]);
-            navigator_->GoToPose(pose);
+                RCLCPP_INFO(this->get_logger(), "Sending waypoint %ld: (%.2f, %.2f).", current_waypoint_index_ + 1, wp[0], wp[1]);
+                navigator_->GoToPose(pose);
 
-            sent_goal_ = true;
+                sent_goal_ = true;
+            }
+            else if (navigator_->IsTaskComplete()){
+                RCLCPP_INFO(this->get_logger(), "PHASE 0: Navigation to waypoint %ld complete.", 
+                            current_waypoint_index_ + 1);
+                //switch to the spin phase
+                sent_goal_ = false;
+                current_waypoint_phase_ = 1;
+            }
             return; 
         }
 
-        if (navigator_->IsTaskComplete()) {
-            RCLCPP_INFO(this->get_logger(), "Completed waypoint %ld.", current_waypoint_index_);
-
-            //print last received amcl pose
-            if (last_amcl_pose_) {
-                auto p = last_amcl_pose_->pose.pose;
-                RCLCPP_INFO(this->get_logger(), "AMCL pose: x=%.2f, y=%.2f, z=%.2f, qx=%.3f, qy=%.3f, qz=%.3f, qw=%.3f",
-                            p.position.x, p.position.y, p.position.z,
-                            p.orientation.x, p.orientation.y, p.orientation.z, p.orientation.w);
+        if(current_waypoint_phase_ == 1){
+            if(!sent_goal_){
+                double full_rotation_radians = 6.28; //360 degrees
+                RCLCPP_INFO(this->get_logger(), "PHASE 1: Starting rotation at waypoint %ld (%.2f radians).", 
+                            current_waypoint_index_ + 1, full_rotation_radians);
+                if(navigator_->Spin(full_rotation_radians)){
+                    sent_goal_ = true;
+                }
+                else{
+                    //debug: move to next waypoint even if spin fails
+                    RCLCPP_ERROR(this->get_logger(), "PHASE 1: Spin request rejected.");
+                }
             }
+            else if (navigator_->IsTaskComplete()){
+                RCLCPP_INFO(this->get_logger(), "PHASE 1: Rotation at waypoint %ld complete.", 
+                            current_waypoint_index_ + 1);
 
-            current_waypoint_index_++;
-            sent_goal_ = false;  //to allow sending next waypoint
+                //print final amcl pose after movement and rotation
+                if (last_amcl_pose_) {
+                    auto p = last_amcl_pose_->pose.pose;
+                    RCLCPP_INFO(this->get_logger(), "AMCL pose after rotation: x=%.2f, y=%.2f, z=%.2f, qx=%.3f, qy=%.3f, qz=%.3f, qw=%.3f",
+                                p.position.x, p.position.y, p.position.z,
+                                p.orientation.x, p.orientation.y, p.orientation.z, p.orientation.w);
+                }
+                //go to the next waypoint
+                current_waypoint_index_++; 
+                sent_goal_ = false;
+                current_waypoint_phase_ = 0; // reset phase for next waypoint
+            }
         }
+        return;
     }
 
     //store latest amcl pose
