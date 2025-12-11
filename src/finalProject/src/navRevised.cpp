@@ -8,7 +8,16 @@
 
 using namespace std::chrono_literals;
 
+// manual test waypoints:
+// ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose "{pose: {
+//     header: { frame_id: 'map' },
+//     pose: {
+//         position: {x: 12.0, y: -12.0, z: -0.10},
+//         orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+//     }
+// }}"
 
+//need to make robot stop every 3 seconds along path to check for humans
 
 // checking map bounds: 'ros2 run nav2_map_server map_saver_cli -t map'
 // map meta data: 'cat map_1765412866.yaml'
@@ -42,56 +51,66 @@ private:
     // vector to hold waypoints
     std::vector<geometry_msgs::msg::Pose> waypoints_;
     int current_waypoint_index_ = 0;
+
+    void initializePose(){
+        // first: it is mandatory to initialize the pose of the robot
+        geometry_msgs::msg::Pose::SharedPtr init = std::make_shared<geometry_msgs::msg::Pose>();
+        // given in assignment
+        init->position.x = 2.12;
+        init->position.y = -21.3;
+        init->position.z = 0.00; 
+
+        double yaw = 1.57;   // 90 degrees, from assignment
+        init->orientation.x = 0.0;
+        init->orientation.y = 0.0;
+        init->orientation.z = sin(yaw / 2.0);  // ≈ 0.707
+        init->orientation.w = cos(yaw / 2.0);  // ≈ 0.707
+
+        navigator_->SetInitialPose(init);
+        RCLCPP_INFO(this->get_logger(), "Initial pose set to (%.2f, %.2f).", init->position.x, init->position.y);
+   }
    
    void loadWaypoints(){
     std::vector<std::pair<double,double>> coords = {
-            {2.12, 14},
+            {2.12, -23.3},
+            {14, -23.3},
+            {9, -21},
             {14, -16},
-            {12, -12},
-            {12, -5},
-            {12, 3},
-            {6, 3},
-            {6, 6},
-            {13.5, 6},
-            {13.5, 14},
-            {0, 14},
-            {0, 16.5},
-            {10, 21},
-            {-6, 24},
-            {-9, 20},
-            {-13, 24},
-            {-13, 7},
-            {-13, 6.3}
+            {9, -16}
+            // {12, -12},
+            // {12, -5},
+            // {12, 3},
+            // {6, 3},
+            // {6, 6},
+            // {13.5, 6},
+            // {13.5, 14},
+            // {0, 14},
+            // {0, 16.5},
+            // {10, 21},
+            // {-6, 24},
+            // {-9, 20},
+            // {-13, 24},
+            // {-13, 7},
+            // {-13, 6.3}
             // unfinished
         };
 
-        for(std::pair<double,double> &c : coords){
+        for(const auto &c : coords){
             geometry_msgs::msg::Pose pose;
             pose.position.x = c.first;
             pose.position.y = c.second;
-            pose.position.z = -0.10; //this is the default in gazebo??
-            pose.orientation.w = 1.0; 
+            // pose.position.z = -0.10; //this is the default in gazebo??
+            // pose.orientation.w = 1.0; 
             //store the created pose into waypoints vector
             waypoints_.push_back(pose);
+            RCLCPP_INFO(this->get_logger(), "Loaded waypoint: (%.2f, %.2f, %.2f).", pose.position.x, pose.position.y, pose.position.z);
         }
 
         RCLCPP_INFO(this->get_logger(), "Loaded %d waypoints.", (int)waypoints_.size());
     }
 
-    void initializePose(){
-        // first: it is mandatory to initialize the pose of the robot
-        geometry_msgs::msg::Pose::SharedPtr init = std::make_shared<geometry_msgs::msg::Pose>();
-        init->position.x = 2.12;
-        init->position.y = -21.3;
-        init->position.z = -0.10; //double check in gazebo
-        init->orientation.w = 1.53;
-        navigator_->SetInitialPose(init);
-        RCLCPP_INFO(this->get_logger(), "Initial pose set to (%.2f, %.2f).", init->position.x, init->position.y);
-   }
-
   //this function checks if the last action is complete, spins once at each waypoint, then sends robot to next waypoint 
   void callback(){
-    // if(!humanFound){
         //no more waypoints
         if((int)current_waypoint_index_ >= (int)waypoints_.size()){
             RCLCPP_INFO(this->get_logger(), "Finished all waypoints.");
@@ -124,8 +143,6 @@ private:
         }
         current_waypoint_index_++;
     }
-//   }
-
 
 };
 
