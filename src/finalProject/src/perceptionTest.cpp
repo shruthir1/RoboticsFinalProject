@@ -1,91 +1,225 @@
-#include <finalProject/navigation.hpp>
-#include <geometry_msgs/msg/pose_array.hpp>
+#include <rclcpp/rclcpp.hpp>
 
-class HumanFinderNode : public rclcpp::Node {
-public:
-    HumanFinderNode() : Node("human_finder") {
-        // Subscribe to perception results
-        human_sub = create_subscription<geometry_msgs::msg::PoseArray>(
-            "/humans_moved", 10, 
-            std::bind(&HumanFinderNode::humanCallback, this, std::placeholders::_1));
-        
-        // Create navigator
-        navigator = std::make_shared<Navigator>(true, false);
-        
-        // Set initial pose
-        auto initial_pose = std::make_shared<geometry_msgs::msg::Pose>();
-        initial_pose->position.x = 2.12;
-        initial_pose->position.y = -21.3;
-        initial_pose->orientation.z = sin(1.57/2);
-        initial_pose->orientation.w = cos(1.57/2);
-        navigator->SetInitialPose(initial_pose);
-        navigator->WaitUntilNav2Active();
-        
-        // Start exploration
-        exploreWarehouse();
-    }
-    
-private:
-    std::shared_ptr<Navigator> navigator;
-    rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr human_sub;
-    std::vector<geometry_msgs::msg::Pose> detected_humans;
-    
-    void humanCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
-        for(const auto& pose : msg->poses) {
-            // Check if this is a new detection
-            bool is_new = true;
-            for(const auto& existing : detected_humans) {
-                float dx = pose.position.x - existing.position.x;
-                float dy = pose.position.y - existing.position.y;
-                if(sqrt(dx*dx + dy*dy) < 1.0) { // Within 1m
-                    is_new = false;
-                    break;
-                }
-            }
-            if(is_new) {
-                detected_humans.push_back(pose);
-                RCLCPP_INFO(get_logger(), "New human found at (%.2f, %.2f)", 
-                           pose.position.x, pose.position.y);
-            }
-        }
-    }
-    
-    void exploreWarehouse() {
-        // Define waypoints to cover the warehouse
-        std::vector<geometry_msgs::msg::PoseStamped> waypoints;
-        
-        // Add strategic positions to scan known human locations
-        // Original human locations: (1, -1) and (-12, 15)
-        addWaypoint(waypoints, 1.0, -1.0, 0.0);
-        addWaypoint(waypoints, -12.0, 15.0, 0.0);
-        // Add more waypoints to cover the warehouse...
-        
-        navigator->FollowWaypoints(waypoints);
-        
-        while(!navigator->IsTaskComplete()) {
-            rclcpp::spin_some(this->get_node_base_interface());
-        }
-        
-        reportResults();
-    }
-    
-    void addWaypoint(std::vector<geometry_msgs::msg::PoseStamped>& waypoints, 
-                     double x, double y, double yaw) {
-        geometry_msgs::msg::PoseStamped pose;
-        pose.header.frame_id = "map";
-        pose.pose.position.x = x;
-        pose.pose.position.y = y;
-        pose.pose.orientation.z = sin(yaw/2);
-        pose.pose.orientation.w = cos(yaw/2);
-        waypoints.push_back(pose);
-    }
-    
-    void reportResults() {
-        RCLCPP_INFO(get_logger(), "=== FINAL RESULTS ===");
-        RCLCPP_INFO(get_logger(), "Found %zu humans:", detected_humans.size());
-        for(size_t i = 0; i < detected_humans.size(); i++) {
-            RCLCPP_INFO(get_logger(), "Human %zu: (%.2f, %.2f)", 
-                       i+1, detected_humans[i].position.x, detected_humans[i].position.y);
-        }
-    }
+#include <nav_msgs/msg/occupancy_grid.hpp>
+#include <sensor_msgs/msg/laser_scan.hpp>
+#include <geometry_msgs/msg/pose_with_covariance_stamped.hpp>
+
+#include <vector>
+#include <queue>
+#include <cmath>
+#include <algorithm>
+
+struct Cell {
+  int x;
+  int y;
 };
+
+struct Human {
+  double x;
+  double y;
+  int size;
+};
+
+class PerceptionNode : public rclcpp::Node {
+public:
+  PerceptionNode() : Node("perception_node") {
+    map_sub_ = create_subscription<nav_msgs::msg::OccupancyGrid>(
+      "/map", 10,
+      std::bind(&PerceptionNode::mapCallback, this, std::placeholders::_1));
+
+    scan_sub_ = create_subscription<sensor_msgs::msg::LaserScan>(
+      "/scan", 10,
+      std::bind(&PerceptionNode::scanCallback, this, std::placeholders::_1));
+
+    amcl_sub_ = create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
+      "/amcl_pose", 10,
+      std::bind(&PerceptionNode::amclCallback, this, std::placeholders::_1));
+
+    timer_ = create_wall_timer(
+      std::chrono::seconds(5),
+      std::bind(&PerceptionNode::process, this));
+
+    RCLCPP_INFO(get_logger(), "BFS Perception Node Started");
+  }
+
+private:
+  // ROS
+  rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr map_sub_;
+  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
+  rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr amcl_sub_;
+  rclcpp::TimerBase::SharedPtr timer_;
+
+  nav_msgs::msg::OccupancyGrid::SharedPtr map_;
+  sensor_msgs::msg::LaserScan::SharedPtr scan_;
+  geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr amcl_;
+
+  // Difference grid
+  std::vector<int8_t> diff_grid_;
+  std::vector<bool> visited_;
+
+  const int FREE_THRESH = 20;
+  const int MIN_COMPONENT_SIZE = 25;
+
+  // ---------------- Callbacks ----------------
+
+  void mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
+    map_ = msg;
+    diff_grid_.assign(map_->info.width * map_->info.height, 0);
+    visited_.assign(map_->info.width * map_->info.height, false);
+  }
+
+  void scanCallback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
+    scan_ = msg;
+  }
+
+  void amclCallback(const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg) {
+    amcl_ = msg;
+  }
+
+  // ---------------- Utilities ----------------
+
+  double getYaw(const geometry_msgs::msg::Quaternion &q) {
+    return std::atan2(
+      2.0 * (q.w * q.z),
+      1.0 - 2.0 * q.z * q.z
+    );
+  }
+
+  bool worldToMap(double wx, double wy, int &mx, int &my) {
+    const auto &info = map_->info;
+    mx = static_cast<int>((wx - info.origin.position.x) / info.resolution);
+    my = static_cast<int>((wy - info.origin.position.y) / info.resolution);
+    return mx >= 0 && my >= 0 &&
+           mx < static_cast<int>(info.width) &&
+           my < static_cast<int>(info.height);
+  }
+
+  int idx(int x, int y) {
+    return y * map_->info.width + x;
+  }
+
+  // ---------------- Main Processing ----------------
+
+  void process() {
+    if (!map_ || !scan_ || !amcl_) {
+      RCLCPP_INFO(get_logger(), "Waiting for map / scan / amcl...");
+      return;
+    }
+
+    std::fill(diff_grid_.begin(), diff_grid_.end(), 0);
+    std::fill(visited_.begin(), visited_.end(), false);
+
+    populateDifferenceGrid();
+    auto humans = bfsConnectedComponents();
+
+    if (humans.size() < 2) {
+      RCLCPP_WARN(get_logger(), "Detected less than 2 humans");
+      return;
+    }
+
+    std::sort(humans.begin(), humans.end(),
+              [](const Human &a, const Human &b) {
+                return a.size > b.size;
+              });
+
+    RCLCPP_INFO(get_logger(), "======= FINAL HUMAN POSITIONS =======");
+    RCLCPP_INFO(get_logger(), "humanDetected[0] = (%.2f, %.2f)",
+                humans[0].x, humans[0].y);
+    RCLCPP_INFO(get_logger(), "humanDetected[1] = (%.2f, %.2f)",
+                humans[1].x, humans[1].y);
+    RCLCPP_INFO(get_logger(), "====================================");
+  }
+
+  // ---------------- Step 1: Difference Grid ----------------
+
+  void populateDifferenceGrid() {
+    double rx = amcl_->pose.pose.position.x;
+    double ry = amcl_->pose.pose.position.y;
+    double yaw = getYaw(amcl_->pose.pose.orientation);
+
+    for (size_t i = 0; i < scan_->ranges.size(); i += 2) {
+      double r = scan_->ranges[i];
+      if (!std::isfinite(r)) continue;
+      if (r < scan_->range_min || r > scan_->range_max) continue;
+
+      double angle = scan_->angle_min + i * scan_->angle_increment;
+      double wx = rx + r * std::cos(yaw + angle);
+      double wy = ry + r * std::sin(yaw + angle);
+
+      int mx, my;
+      if (!worldToMap(wx, wy, mx, my)) continue;
+
+      int map_val = map_->data[idx(mx, my)];
+      if (map_val >= 0 && map_val <= FREE_THRESH) {
+        diff_grid_[idx(mx, my)] = 1;
+      }
+    }
+  }
+
+  // ---------------- Step 2: BFS ----------------
+
+  std::vector<Human> bfsConnectedComponents() {
+    std::vector<Human> humans;
+
+    for (int y = 0; y < (int)map_->info.height; y++) {
+      for (int x = 0; x < (int)map_->info.width; x++) {
+        int id = idx(x, y);
+        if (diff_grid_[id] == 1 && !visited_[id]) {
+          Human h = bfsFromCell(x, y);
+          if (h.size >= MIN_COMPONENT_SIZE)
+            humans.push_back(h);
+        }
+      }
+    }
+    return humans;
+  }
+
+  Human bfsFromCell(int sx, int sy) {
+    std::queue<Cell> q;
+    q.push({sx, sy});
+    visited_[idx(sx, sy)] = true;
+
+    int count = 0;
+    double sum_x = 0.0, sum_y = 0.0;
+
+    const int dx[4] = {1, -1, 0, 0};
+    const int dy[4] = {0, 0, 1, -1};
+
+    while (!q.empty()) {
+      Cell c = q.front(); q.pop();
+      count++;
+
+      sum_x += c.x;
+      sum_y += c.y;
+
+      for (int i = 0; i < 4; i++) {
+        int nx = c.x + dx[i];
+        int ny = c.y + dy[i];
+        if (nx < 0 || ny < 0 ||
+            nx >= (int)map_->info.width ||
+            ny >= (int)map_->info.height)
+          continue;
+
+        int nid = idx(nx, ny);
+        if (diff_grid_[nid] == 1 && !visited_[nid]) {
+          visited_[nid] = true;
+          q.push({nx, ny});
+        }
+      }
+    }
+
+    double wx = map_->info.origin.position.x +
+                (sum_x / count + 0.5) * map_->info.resolution;
+    double wy = map_->info.origin.position.y +
+                (sum_y / count + 0.5) * map_->info.resolution;
+
+    return {wx, wy, count};
+  }
+};
+
+int main(int argc, char **argv) {
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<PerceptionNode>());
+  rclcpp::shutdown();
+  return 0;
+}
