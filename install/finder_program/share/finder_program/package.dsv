@@ -1,6 +1,0 @@
-source;share/finder_program/hook/cmake_prefix_path.dsv
-source;share/finder_program/hook/cmake_prefix_path.sh
-source;share/finder_program/local_setup.bash
-source;share/finder_program/local_setup.dsv
-source;share/finder_program/local_setup.sh
-source;share/finder_program/local_setup.zsh

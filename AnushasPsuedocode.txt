@@ -1,0 +1,66 @@
+DETECTION (Extract initial human positions, compare map vs scan, detect moved humans)
+SUBSCRIBE: /map (nav_msgs/OccupancyGrid)
+SUBSCRIBE: /scan (sensor_msgs/LaserScan)
+SUBSCRIBE: /amcl_pose (geometry_msgs/PoseWithCovarianceStamped)
+USE: TF buffer & listener (to transform base_link -> map)
+PUBLISH: /initial_human_positions
+PUBLISH: /missing_humans
+PUBLISH: /new_human_positions
+
+on startup:
+    wait until /map received
+    original_map = map
+    initial_human_positions = extract_footprints_from_map(original_map)
+    publish(initial_human_positions)
+
+on /amcl_pose update:
+    robot_pose = extract (x, y, yaw)
+
+on /scan update:
+    // Check for humans at expected positions
+    for each pos in initial_human_positions:
+        if not human_present_at(pos, scan, robot_pose, tf):
+            mark pos as missing
+            add pos to missing_humans list
+
+    publish(missing_humans)
+
+    // if any human missing, begin detection of new location
+    if missing_humans not empty:
+        candidate_positions = detect_clusters_in_scan(scan, robot_pose, tf)
+        for each cluster in candidate_positions:
+            if looks_like_human(cluster):
+                new_human_positions.append(cluster)
+
+        publish(new_human_positions)
+
+NAVIGATION (Uses Nav2 to move the robot to initial and new human positions)
+USE: Nav2 NavigateToPose action client
+SUBSCRIBE: /initial_human_positions
+SUBSCRIBE: /missing_humans
+SUBSCRIBE: /new_human_positions
+
+on startup:
+    wait for Nav2 to become active (BT Navigator, Controller, Planner)
+
+when initial_human_positions received:
+    for each human_pos in initial_human_positions:
+        send_goal_to_nav2(human_pos)
+        wait for goal result
+
+        // after arrival, detection node will decide if human missing
+
+when missing_humans received:
+    for each missing_pos:
+        log("Human missing at " + missing_pos)
+
+        // Start search routine
+        execute_rotate_behavior(360 degrees)
+
+        // detection node will publish new_human_positions
+
+when new_human_positions received:
+    for each new_pos in new_human_positions:
+        send_goal_to_nav2(new_pos)
+        wait for goal result
+        confirm human presence with detection_node
