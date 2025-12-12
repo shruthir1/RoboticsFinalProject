@@ -174,7 +174,7 @@ private:
             
             //if we see a change in the current cost map (should've been local cost map not sure if global updates properly) compared to inital grid 
             //basically within a few grids if we see an obstacle that we didnt see during the intial map traversal then change happened
-            if(this->changeHappened(wx, wy) && !this->iswall(wx, wy)){
+            if(this->changeHappened(wx, wy)){
                 RCLCPP_WARN(this->get_logger(),  "Change in map at (%.2f, %.2f)", wx, wy);  
                 //if we see a change then we want to see if the clusters allign with what we feel would identify a human 
                 //so we add these clusters to be analyzed
@@ -195,7 +195,7 @@ private:
             }
             //if we have info in our human clusters array
             //i think we need more logic here analyzing what makes these clusters a human as opposed to anything else 
-            if(!human_clusters.empty()){
+            if(!human_clusters.empty() && !this->iswall(wx, wy)){
                 //we may have deteced a human 
                 this->publishDetectedHuman();
                 RCLCPP_WARN(this->get_logger(),  "Detected possible human position at (%.2f, %.2f)", wx, wy);
