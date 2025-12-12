@@ -250,27 +250,26 @@ private:
         // new obstacle if the cost is between to and 50 but not -1 
         bool new_obstacle = (initial_cost >= 0 && initial_cost <= 10) && (latest_cost > 200);
 
-        // Case 2: Obstacle Disappeared (Moved Away) - Spot was occupied (> 50), is now free (0)
-        // This is needed if the human was originally mapped as a static obstacle.
+        // Obstacle disappeared -- Spot used to be occupied (> 50),  but is now free (0)
+        // This is needed if the human was originally mapped as a static obstacle (it probs was)
         bool obstacle_gone = (initial_cost > 50) && (latest_cost == 0);
 
         //there is a change if we found a new obstacle or an obstacle is gone
-        bool change = new_obstacle || obstacle_gone;
+        bool change = new_obstacle && obstacle_gone;
         
-        RCLCPP_INFO(this->get_logger(), "Change check: Initial cost: %d, Latest cost: %d. Change: %d", 
-                     initial_cost, latest_cost, change); 
+        RCLCPP_INFO(this->get_logger(), "Change check: Initial cost: %d, Latest cost: %d. Change: %d", initial_cost, latest_cost, change); 
 
         return change;
     }
 
-    //should return true if we approach a wall 
-    bool iswall(float wx, float wy){
-        //paramters are global coordinates and we want to convert to local coordinates
-        int mx = (wx - initial_map.info.origin.position.x) / initial_map.info.resolution;
-        int my = (wy - initial_map.info.origin.position.y) / initial_map.info.resolution;
+    // //should return true if we approach a wall 
+    // bool iswall(float wx, float wy){
+    //     //paramters are global coordinates and we want to convert to local coordinates
+    //     int mx = (wx - initial_map.info.origin.position.x) / initial_map.info.resolution;
+    //     int my = (wy - initial_map.info.origin.position.y) / initial_map.info.resolution;
         
 
-    }
+    // }
 
     void publishDetectedHuman(){
         geometry_msgs::msg::PoseArray arr;
@@ -282,7 +281,7 @@ private:
             geometry_msgs::msg::Pose p;
             p.position.x = c.cx(); //updating centroid average x 
             p.position.y = c.cy(); //updating centroid average y 
-            p.orientation.w = 1.0;
+            p.orientation.w = 1.0; // =1 
             arr.poses.push_back(p);
         }
 
