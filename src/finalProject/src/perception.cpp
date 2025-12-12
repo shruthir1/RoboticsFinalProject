@@ -263,13 +263,28 @@ private:
     }
 
     // //should return true if we approach a wall 
-    // bool iswall(float wx, float wy){
-    //     //paramters are global coordinates and we want to convert to local coordinates
-    //     int mx = (wx - initial_map.info.origin.position.x) / initial_map.info.resolution;
-    //     int my = (wy - initial_map.info.origin.position.y) / initial_map.info.resolution;
-        
+    bool iswall(float wx, float wy){
+        //paramters are global coordinates and we want to convert to local coordinates
+        int mx = (wx - initial_map.info.origin.position.x) / initial_map.info.resolution;
+        int my = (wy - initial_map.info.origin.position.y) / initial_map.info.resolution;
 
-    // }
+        for(int dx = -5, dx < 5, dx++){
+            for(int dy = -5, dy < 5, dy++){
+                int checkX = mx + dx;
+                int checkY = my + dy;
+
+                if(0 <= checkX && checkX < initial_map.info.width &&
+                   0 <= checkY && checkY < initial_map.info.height){
+                  if(initial_map.data[checkY * initial_map.info.width + checkX] > 50){
+                    return true; // there is a wall nearby
+                  }
+                }
+            }
+    
+        }
+        
+        return false; // no wall detected
+    }
 
     void publishDetectedHuman(){
         geometry_msgs::msg::PoseArray arr;
