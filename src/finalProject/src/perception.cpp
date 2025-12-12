@@ -157,7 +157,7 @@ private:
             if (range < msg->range_min || range >= 5) continue;
             
             r_angle_rframe = msg->angle_min + i * msg->angle_increment;
-            r_angle_wframe = r_angle_rframe + yaw + 1.5708; // Yaw + fixed offset
+            r_angle_wframe = r_angle_rframe + yaw - 1.5708; // Yaw + fixed offset
 
             wx = rx + range * cos(r_angle_wframe); 
             wy = ry + range * sin(r_angle_wframe); 
@@ -175,7 +175,7 @@ private:
             std::vector<HumanCluster> human_clusters;
             for(size_t i = 0; i < clusters.size(); i++){
                 HumanCluster &c = clusters[i];
-                if(c.count >= 3){ 
+                if(c.count >= 10){ 
                     human_clusters.push_back(c);
                 }
             }
