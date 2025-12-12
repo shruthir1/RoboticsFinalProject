@@ -42,11 +42,11 @@ public:
      pose_subscriber = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>("/amcl_pose", 10, std::bind(&PerceptionNode::amclCallback, this, std::placeholders::_1));
      //subscribing to a STATIC map to have reference of intial env
      //data we can obtain from map: 
-     static_map_subscriber = this->create_subscription<nav_msgs::msg::OccupancyGrid>("/map", 10, std::bind(&PerceptionNode::staticMapCallback, this, std::placeholders::_1));
+     static_map_subscriber = this->create_subscription<nav_msgs::msg::OccupancyGrid>("/global_costmap/costmap", 10, std::bind(&PerceptionNode::staticMapCallback, this, std::placeholders::_1));
      //need to publish human information to other nodes like navigation 
      humans_publisher = this->create_publisher<geometry_msgs::msg::PoseArray>("/humans_moved", 10);
      //subscribing to the map that changes when we make changes 
-     dynamic_map_subscriber = this->create_subscription<nav_msgs::msg::OccupancyGrid>( "/global_costmap/costmap", 10, std::bind(&PerceptionNode::dynamicMapCallback, this, std::placeholders::_1));
+     dynamic_map_subscriber = this->create_subscription<nav_msgs::msg::OccupancyGrid>( "/local_costmap/costmap", 10, std::bind(&PerceptionNode::dynamicMapCallback, this, std::placeholders::_1));
 
     RCLCPP_INFO(get_logger(), "PerceptionNode is starting!!");
   }
@@ -221,9 +221,9 @@ public:
         //looking at original map, grid was free if its cost was zero
         bool free_before = (initial_map.data[index] == 0);
         //with current map, is this space still free? We are saying above 50 instead of 0 to avoid false positives
-        bool now_occupied = (latest_map.data[index] > 50);
+        bool now_occupied = (latest_map.data[index] >= 70); //254 denotes there will be a collision, 0 means no obsticle, higher value indicates higher prob of obstacle
         //if we dont know it might return -1
-         if (latest_map.data[index] < 0) return false;
+        if (latest_map.data[index] < 0) return false;
         // bool scanned = true; //if we made this far then we got a valud range from lidar 
         bool change = false;
         //need to compare prev grid and current grid to look for change 
