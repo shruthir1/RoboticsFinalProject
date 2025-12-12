@@ -52,12 +52,9 @@ ament_target_dependencies(perception_node
   rclcpp
   sensor_msgs
   geometry_msgs
-)
-
-add_executable(locomotion_node src/locomotion.cpp)
-ament_target_dependencies(locomotion_node
-  rclcpp
-  geometry_msgs
+  nav_msgs
+  tf2
+  tf2_geometry_msgs
 )
 
 target_include_directories(navigator
@@ -83,9 +80,13 @@ ament_export_targets(navigatorlib HAS_LIBRARY_TARGET) # unsure
 install(TARGETS
   navigation_node
   perception_node
-  locomotion_node
   EXPORT navigatorlib #unsure
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)
