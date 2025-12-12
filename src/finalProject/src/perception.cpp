@@ -39,10 +39,10 @@ public:
      scan_subscriber = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan", 10, std::bind(&PerceptionNode::scanCallback, this, std::placeholders::_1));
      //subscribing to amcl
      //data that we can obtain from amcl: 
-     pose_subscriber = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>("/amcl_pose", 10, std::bind(&PerceptionNode::amclCallback, this, std::placeholders::_1));
+     pose_subscriber = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>("/amcl_pose", 1, std::bind(&PerceptionNode::amclCallback, this, std::placeholders::_1));
      //subscribing to a STATIC map to have reference of intial env
      //data we can obtain from map: 
-     static_map_subscriber = this->create_subscription<nav_msgs::msg::OccupancyGrid>("/global_costmap/costmap", 10, std::bind(&PerceptionNode::staticMapCallback, this, std::placeholders::_1));
+     static_map_subscriber = this->create_subscription<nav_msgs::msg::OccupancyGrid>("/map", 10, std::bind(&PerceptionNode::staticMapCallback, this, std::placeholders::_1));
      //need to publish human information to other nodes like navigation 
      humans_publisher = this->create_publisher<geometry_msgs::msg::PoseArray>("/humans_moved", 10);
      //subscribing to the map that changes when we make changes 
