@@ -274,8 +274,8 @@ private:
                 int checkX = wx + dx;
                 int checkY = wy + dy;
 
-                if(0 <= checkX && checkX < initial_map.info.width &&
-                   0 <= checkY && checkY < initial_map.info.height){
+                if(0 <= checkX && checkX < (int)initial_map.info.width &&
+                   0 <= checkY && checkY < (int)initial_map.info.height){
                   if(initial_map.data[checkY * initial_map.info.width + checkX] > 50){
                     return true; // there is a wall nearby
                   }
