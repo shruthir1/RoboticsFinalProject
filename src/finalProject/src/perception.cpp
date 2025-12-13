@@ -195,7 +195,7 @@ private:
             }
             //if we have info in our human clusters array
             //i think we need more logic here analyzing what makes these clusters a human as opposed to anything else 
-            if(!human_clusters.empty()){
+            if(!human_clusters.empty() && !this->iswall(wx, wy)){
                 //we may have deteced a human 
                 this->publishDetectedHuman();
                 RCLCPP_WARN(this->get_logger(),  "Detected possible human position at (%.2f, %.2f)", wx, wy);
@@ -263,13 +263,28 @@ private:
         return change;
     }
 
-    //should return true if we approach a wall 
+    // //should return true if we approach a wall 
     bool iswall(float wx, float wy){
         //paramters are global coordinates and we want to convert to local coordinates
-        int mx = (wx - initial_map.info.origin.position.x) / initial_map.info.resolution;
-        int my = (wy - initial_map.info.origin.position.y) / initial_map.info.resolution;
-        
+        //int mx = (wx - initial_map.info.origin.position.x) / initial_map.info.resolution;
+        //int my = (wy - initial_map.info.origin.position.y) / initial_map.info.resolution;
 
+        for(int dx = -5; dx < 5; dx++){
+            for(int dy = -5, dy < 5, dy++){
+                int checkX = wx + dx;
+                int checkY = wx + dy;
+
+                if(0 <= checkX && checkX < initial_map.info.width &&
+                   0 <= checkY && checkY < initial_map.info.height){
+                  if(initial_map.data[checkY * initial_map.info.width + checkX] > 50){
+                    return true; // there is a wall nearby
+                  }
+                }
+            }
+    
+        }
+        
+        return false; // no wall detected
     }
 
     void publishDetectedHuman(){
