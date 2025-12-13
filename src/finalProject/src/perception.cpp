@@ -272,7 +272,7 @@ private:
         for(int dx = -5; dx < 5; dx++){
             for(int dy = -5; dy < 5; dy++){
                 int checkX = wx + dx;
-                int checkY = wx + dy;
+                int checkY = wy + dy;
 
                 if(0 <= checkX && checkX < initial_map.info.width &&
                    0 <= checkY && checkY < initial_map.info.height){
