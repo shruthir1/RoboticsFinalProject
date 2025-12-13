@@ -270,7 +270,7 @@ private:
         //int my = (wy - initial_map.info.origin.position.y) / initial_map.info.resolution;
 
         for(int dx = -5; dx < 5; dx++){
-            for(int dy = -5, dy < 5, dy++){
+            for(int dy = -5; dy < 5; dy++){
                 int checkX = wx + dx;
                 int checkY = wx + dy;
 
